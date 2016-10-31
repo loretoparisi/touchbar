@@ -25,6 +25,9 @@ so you should see the `Show Touch Bar` option just after the Organizer option.
 ## Launch the Touch Bar simulator programmatically
 The [TouchBarLauncher](https://github.com/zats/TouchBarLauncher) Xcode program in Swift, let you run the Touch Bar simulator programmatically and it's very handy. Made by [Sash Zats](https://github.com/zats) it uses the simulator host window controller `IDETouchBarSimulatorHostWindowController` to leverage the TouchBar.
 
+## Touch Bar integrations
+[React Native TouchBar](https://github.com/ptmt/react-native-touchbar) is a [React Native](https://github.com/facebook/react-native) component that adds support for the macOS `TouchBar` in React Native.
+
 ## References
 - [About the TouchBar]( https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/AbouttheTouchBar.html)
 - [Visual Design](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/VisualDesign.html#//apple_ref/doc/uid/20000957-CH106-SW1) 
