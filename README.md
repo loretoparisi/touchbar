@@ -34,3 +34,15 @@ The [TouchBarLauncher](https://github.com/zats/TouchBarLauncher) Xcode program i
 - [Interaction and Gestures](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Interaction.html#//apple_ref/doc/uid/20000957-CH105-SW1)
 - [TouchBar Icons](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Icons.html#//apple_ref/doc/uid/20000957-CH107-SW1)
 - [TouchBar Controls](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsandViews.html#//apple_ref/doc/uid/20000957-CH108-SW1)
+
+## Touchbar Tools
+- [TouchBarScreenshotter](https://github.com/steventroughtonsmith/TouchBarScreenshotter), easily snap screenshots of the currently presented Touch Bar in macOS
+- [TouchBarDemoApp](https://github.com/bikkelbroeders/TouchBarDemoApp), Allows you to use your macOS Touch Bar from an iPad (through USB connection) or on-screen by pressing the Fn-key.
+
+## Touchbar Example Apps
+- [KnightTouchBar2000](https://github.com/AkdM/KnightTouchBar2000), KITT 2000 chaser animation for your MacBook Pro TouchBar.
+- [TouchFart](https://github.com/hungtruong/TouchFart), A fart app for the new Macbook Pro's Touch Bar
+- [Touchbar Nyancat](https://github.com/avatsaev/touchbar_nyancat), nyancat animation on your +$2k MacBook Pro's Touchbar
+
+## Touchbar Games (!)
+- [Touch Bar Space Fight](https://github.com/insidegui/TouchBarSpaceFight)
