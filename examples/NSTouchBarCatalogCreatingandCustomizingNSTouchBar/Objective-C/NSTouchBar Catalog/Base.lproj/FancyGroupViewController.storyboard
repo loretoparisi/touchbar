@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fancy Group View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="FancyGroupViewController" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="79"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="SnE-Qg-kgQ">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="79"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="42" width="414" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a fancy NSGroupTouchBarItem" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="evj-4B-dVd">
+                                        <rect key="frame" x="188" y="18" width="75" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Principal" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gh7-et-Ffk">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="principalAction:" target="wyg-tK-EQJ" id="Nck-u7-WFw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="Ft9-oC-MJg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="LDO-OB-8ZS"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="evj-4B-dVd" secondAttribute="centerX" id="TxJ-Wb-7kK"/>
+                                    <constraint firstItem="evj-4B-dVd" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="8" symbolic="YES" id="Uvw-Lz-lnh"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="Vj5-rD-i99"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="SnE-Qg-kgQ" secondAttribute="leading" constant="20" symbolic="YES" id="gVM-lW-8Bv"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="SnE-Qg-kgQ" secondAttribute="top" constant="20" symbolic="YES" id="ufh-BT-EdT"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SnE-Qg-kgQ" secondAttribute="trailing" id="BpU-uS-sQe"/>
+                            <constraint firstItem="SnE-Qg-kgQ" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="cDL-gZ-Qx8"/>
+                            <constraint firstAttribute="bottom" secondItem="SnE-Qg-kgQ" secondAttribute="bottom" id="h0X-lH-Qdd"/>
+                            <constraint firstItem="SnE-Qg-kgQ" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="yQE-4u-lHc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="principalCheckBox" destination="evj-4B-dVd" id="84X-Ei-2bG"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="-27.5"/>
+        </scene>
+    </scenes>
+</document>

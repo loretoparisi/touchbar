@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popover View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="PopoverViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="215"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Tok-I5-0Zg">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="215"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="178" width="235" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSPopoverTouchBarItem" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H06-ko-krq">
+                                        <rect key="frame" x="30" y="141" width="68" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Collapsed:" id="FvK-ym-hbe">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-QX-tRR">
+                                        <rect key="frame" x="100" y="18" width="134" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Use Custom Close" bezelStyle="regularSquare" imagePosition="left" inset="2" id="a1s-sT-SRM">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customizeAction:" target="wyg-tK-EQJ" id="wjY-RF-J0i"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="M6t-mT-lNg">
+                                        <rect key="frame" x="100" y="38" width="141" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Use Press and Hold" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gHp-mh-i1N">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customizeAction:" target="wyg-tK-EQJ" id="ali-pC-C2H"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="1015" translatesAutoresizingMaskIntoConstraints="NO" id="njz-pS-vKW">
+                                        <rect key="frame" x="101" y="74" width="69" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Custom" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="gHB-lL-8hd">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="representationTypeAction:" target="wyg-tK-EQJ" id="61Z-Wh-6nZ"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="1014" translatesAutoresizingMaskIntoConstraints="NO" id="A3l-tE-Vln">
+                                        <rect key="frame" x="101" y="140" width="139" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Image and/or Label" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="zD3-ii-eeW">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="representationTypeAction:" target="wyg-tK-EQJ" id="AG6-dR-x16"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="FL2-91-8DG">
+                                        <rect key="frame" x="141" y="117" width="59" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Image" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="7Bq-Ca-3NR">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customizeAction:" target="wyg-tK-EQJ" id="TWa-VR-CZy"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="a8u-UY-NyI">
+                                        <rect key="frame" x="141" y="97" width="55" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Label" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0DS-0i-YXZ">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customizeAction:" target="wyg-tK-EQJ" id="1JT-OG-Wyy"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wQg-Zr-pzO">
+                                        <rect key="frame" x="53" y="39" width="43" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Other:" id="4C5-9a-X3I">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a8u-UY-NyI" firstAttribute="top" secondItem="FL2-91-8DG" secondAttribute="bottom" constant="6" id="2wF-yA-P3b"/>
+                                    <constraint firstItem="M6t-mT-lNg" firstAttribute="leading" secondItem="wQg-Zr-pzO" secondAttribute="trailing" constant="8" symbolic="YES" id="3fS-24-Jb4"/>
+                                    <constraint firstItem="njz-pS-vKW" firstAttribute="leading" secondItem="M6t-mT-lNg" secondAttribute="leading" id="82i-dk-d5a"/>
+                                    <constraint firstItem="M6t-mT-lNg" firstAttribute="top" secondItem="njz-pS-vKW" secondAttribute="bottom" constant="21" id="8RD-5M-Cez"/>
+                                    <constraint firstItem="H06-ko-krq" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="20" id="DuD-db-b2g"/>
+                                    <constraint firstItem="H06-ko-krq" firstAttribute="baseline" secondItem="A3l-tE-Vln" secondAttribute="baseline" id="INA-nM-TuE"/>
+                                    <constraint firstItem="a8u-UY-NyI" firstAttribute="leading" secondItem="FL2-91-8DG" secondAttribute="leading" id="Ian-7P-h1p"/>
+                                    <constraint firstItem="FL2-91-8DG" firstAttribute="centerX" secondItem="A3l-tE-Vln" secondAttribute="centerX" id="JeU-KR-AUs"/>
+                                    <constraint firstItem="njz-pS-vKW" firstAttribute="top" secondItem="a8u-UY-NyI" secondAttribute="bottom" constant="8" id="L86-SZ-7m7"/>
+                                    <constraint firstItem="A3l-tE-Vln" firstAttribute="leading" secondItem="njz-pS-vKW" secondAttribute="leading" id="McH-9r-yup"/>
+                                    <constraint firstItem="njz-pS-vKW" firstAttribute="centerX" secondItem="Tok-I5-0Zg" secondAttribute="centerX" id="PLK-KC-Snk"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="Tok-I5-0Zg" secondAttribute="leading" constant="20" id="R5t-e0-MAa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="271" id="SAq-yC-UNF"/>
+                                    <constraint firstItem="VTQ-QX-tRR" firstAttribute="top" secondItem="M6t-mT-lNg" secondAttribute="bottom" constant="6" symbolic="YES" id="Y9A-af-ldG"/>
+                                    <constraint firstItem="M6t-mT-lNg" firstAttribute="leading" secondItem="VTQ-QX-tRR" secondAttribute="leading" id="b1o-R5-gzZ"/>
+                                    <constraint firstItem="FL2-91-8DG" firstAttribute="top" secondItem="A3l-tE-Vln" secondAttribute="bottom" constant="8" id="bl3-O3-H1g"/>
+                                    <constraint firstItem="A3l-tE-Vln" firstAttribute="leading" secondItem="H06-ko-krq" secondAttribute="trailing" constant="6" symbolic="YES" id="dlm-P3-1U4"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="njz-pS-vKW" secondAttribute="centerX" id="gou-9Y-oSX"/>
+                                    <constraint firstItem="wQg-Zr-pzO" firstAttribute="baseline" secondItem="M6t-mT-lNg" secondAttribute="baseline" id="l2Y-7e-WF5"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="Tok-I5-0Zg" secondAttribute="top" constant="20" symbolic="YES" id="pib-6k-7Nv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="215" id="sHL-uK-9FD"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Tok-I5-0Zg" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="LnU-lt-xtb"/>
+                            <constraint firstItem="Tok-I5-0Zg" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="hgu-Ha-cSu"/>
+                            <constraint firstAttribute="bottom" secondItem="Tok-I5-0Zg" secondAttribute="bottom" id="uxc-G0-szw"/>
+                            <constraint firstAttribute="trailing" secondItem="Tok-I5-0Zg" secondAttribute="trailing" id="zvv-BH-bnj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pressAndHold" destination="M6t-mT-lNg" id="gA1-tg-INd"/>
+                        <outlet property="useCustomClose" destination="VTQ-QX-tRR" id="GRB-go-LYw"/>
+                        <outlet property="useImage" destination="FL2-91-8DG" id="7uJ-KV-Jed"/>
+                        <outlet property="useLabel" destination="a8u-UY-NyI" id="mDe-MS-ZHi"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99.5" y="51"/>
+        </scene>
+    </scenes>
+</document>

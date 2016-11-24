@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2656" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="0TL-r8-0Fk">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="7104"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.1"/>
+    </dependencies>
+    <scenes>
+        <!--TouchBarImagesView Controller-->
+        <scene sceneID="mUP-n3-9vv">
+            <objects>
+                <viewController storyboardIdentifier="TouchBarImagesViewController" id="0TL-r8-0Fk" userLabel="TouchBarImagesView Controller" customClass="TouchBarImagesViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="SY0-UQ-yPY">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Y0v-N9-fq7">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <subviews>
+                                    <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8er-Cs-Ihx">
+                                        <rect key="frame" x="20" y="20" width="440" height="230"/>
+                                        <clipView key="contentView" drawsBackground="NO" id="bFf-Dd-lck">
+                                            <rect key="frame" x="1" y="1" width="438" height="228"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <collectionView selectable="YES" id="908-Uh-Rkl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="438" height="228"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="EbZ-I0-HAx">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                    </collectionViewFlowLayout>
+                                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </collectionView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="3ST-pm-06Q">
+                                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Cmj-8i-3nM">
+                                            <rect key="frame" x="400" y="1" width="16" height="217"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8er-Cs-Ihx" secondAttribute="bottom" constant="20" id="8iF-T2-6bZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8er-Cs-Ihx" secondAttribute="trailing" constant="20" id="IjH-k1-ljv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="270" id="MSk-jw-dk9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="480" id="P8U-Z1-AWw"/>
+                                    <constraint firstItem="8er-Cs-Ihx" firstAttribute="leading" secondItem="Y0v-N9-fq7" secondAttribute="leading" constant="20" id="ScJ-aY-Lyf"/>
+                                    <constraint firstItem="8er-Cs-Ihx" firstAttribute="top" secondItem="Y0v-N9-fq7" secondAttribute="top" constant="20" id="c5E-BT-tDa"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Y0v-N9-fq7" firstAttribute="leading" secondItem="SY0-UQ-yPY" secondAttribute="leading" id="D4w-97-Qk6"/>
+                            <constraint firstItem="Y0v-N9-fq7" firstAttribute="top" secondItem="SY0-UQ-yPY" secondAttribute="top" id="EUj-YY-b1n"/>
+                            <constraint firstAttribute="trailing" secondItem="Y0v-N9-fq7" secondAttribute="trailing" id="Eif-bF-ifo"/>
+                            <constraint firstAttribute="bottom" secondItem="Y0v-N9-fq7" secondAttribute="bottom" id="m6q-aS-PC0"/>
+                        </constraints>
+                    </view>
+                    <touchBar key="touchBar" id="y9F-mz-PQC" userLabel="NSTouchBar">
+                        <touchBarItems>
+                            <touchBarItem id="hbE-HG-mRc" userLabel="Push Button">
+                                <viewController key="viewController" id="VCs-u6-BMr">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JIp-Cz-cBz">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cfJ-rW-Yyv">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="exv-aS-bpL" userLabel="Text Field">
+                                <viewController key="viewController" id="hI5-nQ-9qG">
+                                    <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9te-lN-XHD" userLabel="Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="8" height="21"/>
+                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" drawsBackground="YES" id="s5d-Hf-uWP">
+                                            <font key="font" metaFont="cellTitle"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <outlet property="theCollectionView" destination="908-Uh-Rkl" id="Ic6-JW-Vx8"/>
+                        <outlet property="touchBarButton" destination="JIp-Cz-cBz" id="57e-fz-eHD"/>
+                        <outlet property="touchBarLabel" destination="9te-lN-XHD" id="veH-wo-N5p"/>
+                    </connections>
+                </viewController>
+                <customObject id="SOg-ig-ufr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="58"/>
+        </scene>
+    </scenes>
+</document>

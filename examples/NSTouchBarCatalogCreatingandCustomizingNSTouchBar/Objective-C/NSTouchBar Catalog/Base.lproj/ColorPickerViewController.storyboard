@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11536" systemVersion="16B2339" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11536"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Picker View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="ColorPickerViewController" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="358" height="161"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="5Ej-C9-phQ">
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="161"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="124" width="322" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSColorPickerTouchBarItem" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button tag="1002" translatesAutoresizingMaskIntoConstraints="NO" id="90f-s9-64M">
+                                        <rect key="frame" x="110" y="99" width="96" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Color Picker" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="rUq-pM-Xx7">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="choiceAction:" target="wyg-tK-EQJ" id="y0u-p4-wrs"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="1003" translatesAutoresizingMaskIntoConstraints="NO" id="h5f-mM-4m2">
+                                        <rect key="frame" x="110" y="77" width="125" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Text Color Picker" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="hu4-6b-AGP">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="choiceAction:" target="wyg-tK-EQJ" id="Eey-kN-Fzq"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="1004" translatesAutoresizingMaskIntoConstraints="NO" id="lUC-wV-OnL">
+                                        <rect key="frame" x="110" y="55" width="139" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Stroke Color Picker" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="03K-97-eSF">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="choiceAction:" target="wyg-tK-EQJ" id="VtM-e0-amc"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="hRb-KO-VbZ">
+                                        <rect key="frame" x="110" y="25" width="139" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Use Custom Colors" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Avk-0X-lKF">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customColorsAction:" target="wyg-tK-EQJ" id="nPc-If-z6a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="04H-tY-N73"/>
+                                    <constraint firstItem="h5f-mM-4m2" firstAttribute="leading" secondItem="lUC-wV-OnL" secondAttribute="leading" id="5Fz-6W-hdP"/>
+                                    <constraint firstItem="hRb-KO-VbZ" firstAttribute="top" secondItem="lUC-wV-OnL" secondAttribute="bottom" constant="15" id="5zR-cj-fdT"/>
+                                    <constraint firstItem="lUC-wV-OnL" firstAttribute="trailing" secondItem="hRb-KO-VbZ" secondAttribute="trailing" id="ApP-6k-WUa"/>
+                                    <constraint firstItem="90f-s9-64M" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="8" symbolic="YES" id="BNt-Yu-WN9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="258" id="Nyh-m0-eJk"/>
+                                    <constraint firstItem="90f-s9-64M" firstAttribute="leading" secondItem="h5f-mM-4m2" secondAttribute="leading" id="O4d-1n-doH"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="lUC-wV-OnL" secondAttribute="centerX" id="a8k-xm-Ywy"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="5Ej-C9-phQ" secondAttribute="leading" constant="20" symbolic="YES" id="cDc-V4-QzK"/>
+                                    <constraint firstItem="lUC-wV-OnL" firstAttribute="top" secondItem="h5f-mM-4m2" secondAttribute="bottom" constant="6" symbolic="YES" id="jxX-nW-umb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="161" id="mRG-ja-Ib4"/>
+                                    <constraint firstItem="h5f-mM-4m2" firstAttribute="top" secondItem="90f-s9-64M" secondAttribute="bottom" constant="6" symbolic="YES" id="vam-Z9-fmH"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="5Ej-C9-phQ" secondAttribute="top" constant="20" symbolic="YES" id="wGF-Lu-Oti"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5Ej-C9-phQ" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="Sg5-AE-5E5"/>
+                            <constraint firstAttribute="bottom" secondItem="5Ej-C9-phQ" secondAttribute="bottom" id="lvM-jx-Ynv"/>
+                            <constraint firstItem="5Ej-C9-phQ" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="orz-ZQ-ftj"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ej-C9-phQ" secondAttribute="trailing" id="u3i-pO-3Y5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customColors" destination="hRb-KO-VbZ" id="YiI-2v-VLu"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="111.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2656" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="7104"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.1"/>
+    </dependencies>
+    <scenes>
+        <!--Visibility View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController storyboardIdentifier="VisibilityViewController" id="wyg-tK-EQJ" customClass="VisibilityViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="320"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="gGA-pg-UWj">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="320"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="283" width="364" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows how to use the visibility priorty of NSTouchBarItem" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="eCu-7j-9g6">
+                                        <rect key="frame" x="114" y="51" width="192" height="196"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q8f-Wh-y4i">
+                                                <rect key="frame" x="67" y="169" width="96" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="K7l-SF-tui">
+                                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="6mt-OO-TDd" customClass="PriorityValueFormatter" customModule="NSTouchBar_Catalog" customModuleProvider="target">
+                                                        <real key="minimum" value="-1000"/>
+                                                        <real key="maximum" value="1000"/>
+                                                    </numberFormatter>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="PvC-ha-9bi"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority1" id="7Qi-00-lvd"/>
+                                                    <outlet property="delegate" destination="wyg-tK-EQJ" id="wWz-TK-q3Z"/>
+                                                    <outlet property="nextKeyView" destination="2fR-t8-S5N" id="eTh-Xj-OH4"/>
+                                                </connections>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqT-7m-2hQ">
+                                                <rect key="frame" x="7" y="89" width="57" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Button4:" id="1jo-8t-2U4">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EJU-1f-cLg">
+                                                <rect key="frame" x="7" y="66" width="57" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Button5:" id="V8y-yc-nAq">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcA-Zb-aaW">
+                                                <rect key="frame" x="7" y="7" width="55" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Button7:" id="Wef-JP-jm7">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="g6V-1s-1UZ">
+                                                <rect key="frame" x="67" y="109" width="96" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="tEg-Sk-RXU">
+                                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="5" id="gEF-WH-kUv" customClass="PriorityValueFormatter" customModule="NSTouchBar_Catalog" customModuleProvider="target">
+                                                        <real key="minimum" value="-1000"/>
+                                                        <real key="maximum" value="1000"/>
+                                                    </numberFormatter>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="zuo-Fi-eys"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority3" id="CP5-kw-uVn"/>
+                                                    <outlet property="delegate" destination="wyg-tK-EQJ" id="DQh-hr-OZX"/>
+                                                    <outlet property="nextKeyView" destination="0wn-8E-pJx" id="YgP-go-ikO"/>
+                                                </connections>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="kFk-xG-Id3">
+                                                <rect key="frame" x="67" y="4" width="96" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="L9X-fe-UPx">
+                                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="5" id="OIX-qa-5UT" customClass="PriorityValueFormatter" customModule="NSTouchBar_Catalog" customModuleProvider="target">
+                                                        <real key="minimum" value="-1000"/>
+                                                        <real key="maximum" value="1000"/>
+                                                    </numberFormatter>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="irJ-TU-doF"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority7" id="ThY-Dh-cVg"/>
+                                                    <outlet property="delegate" destination="wyg-tK-EQJ" id="Idg-je-Z7o"/>
+                                                </connections>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="0wn-8E-pJx">
+                                                <rect key="frame" x="67" y="86" width="96" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="vOs-36-FhG">
+                                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="5" id="0zO-di-ofs" customClass="PriorityValueFormatter" customModule="NSTouchBar_Catalog" customModuleProvider="target">
+                                                        <real key="minimum" value="-1000"/>
+                                                        <real key="maximum" value="1000"/>
+                                                    </numberFormatter>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="CvW-Fb-qhr"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority4" id="P5p-sW-RJz"/>
+                                                    <outlet property="delegate" destination="wyg-tK-EQJ" id="50R-D4-KUL"/>
+                                                    <outlet property="nextKeyView" destination="5uO-cA-JAT" id="YPR-T1-12s"/>
+                                                </connections>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4R-hk-FlF">
+                                                <rect key="frame" x="7" y="172" width="54" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Button1:" id="2R5-Ic-O8C">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="2fR-t8-S5N">
+                                                <rect key="frame" x="67" y="143" width="96" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="stN-U6-qw8">
+                                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="5" id="rzp-mp-Cj5" customClass="PriorityValueFormatter" customModule="NSTouchBar_Catalog" customModuleProvider="target">
+                                                        <real key="minimum" value="-1000"/>
+                                                        <real key="maximum" value="1000"/>
+                                                    </numberFormatter>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="Zhg-B8-Tse"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority2" id="xq6-gf-JcB"/>
+                                                    <outlet property="delegate" destination="wyg-tK-EQJ" id="7Mk-4x-bId"/>
+                                                    <outlet property="nextKeyView" destination="g6V-1s-1UZ" id="eLp-dX-Vdh"/>
+                                                </connections>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="5uO-cA-JAT">
+                                                <rect key="frame" x="67" y="63" width="96" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="xHw-Cv-osZ">
+                                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="5" id="Hp7-U4-RZa" customClass="PriorityValueFormatter" customModule="NSTouchBar_Catalog" customModuleProvider="target">
+                                                        <real key="minimum" value="-1000"/>
+                                                        <real key="maximum" value="1000"/>
+                                                    </numberFormatter>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="f3D-8P-jV6"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority5" id="waB-yJ-C9v"/>
+                                                    <outlet property="delegate" destination="wyg-tK-EQJ" id="dkt-cK-9Ow"/>
+                                                    <outlet property="nextKeyView" destination="lIq-8k-Rio" id="LPd-ny-cyb"/>
+                                                </connections>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6vf-Tq-9LD">
+                                                <rect key="frame" x="7" y="33" width="57" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Button6:" id="VKY-l9-G3H">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="lIq-8k-Rio">
+                                                <rect key="frame" x="67" y="30" width="96" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0" drawsBackground="YES" id="DtW-Ue-b7J">
+                                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="5" id="JVc-uW-JkI" customClass="PriorityValueFormatter" customModule="NSTouchBar_Catalog" customModuleProvider="target">
+                                                        <real key="minimum" value="-1000"/>
+                                                        <real key="maximum" value="1000"/>
+                                                    </numberFormatter>
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="xcG-Hp-zL5"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority6" id="Tdg-sA-y7b"/>
+                                                    <outlet property="delegate" destination="wyg-tK-EQJ" id="Wy2-rB-HoW"/>
+                                                    <outlet property="nextKeyView" destination="kFk-xG-Id3" id="6UP-1F-Wmq"/>
+                                                </connections>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-dN-Y8w">
+                                                <rect key="frame" x="7" y="112" width="57" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Button3:" id="fnI-VU-AcP">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FgK-L2-xQQ">
+                                                <rect key="frame" x="7" y="146" width="56" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Button2:" id="yea-ic-Vsf">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BK8-Eo-gOB">
+                                                <rect key="frame" x="161" y="166" width="19" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="-1000" maxValue="1000" id="jGi-ke-hqq"/>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="bkm-jy-Kcv"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority1" id="Nwn-wD-HcG"/>
+                                                </connections>
+                                            </stepper>
+                                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHO-Mt-WyC">
+                                                <rect key="frame" x="161" y="141" width="19" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="-1000" maxValue="1000" id="Igg-kS-jdS"/>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="oOT-2x-yUQ"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority2" id="8bA-a6-ct2"/>
+                                                </connections>
+                                            </stepper>
+                                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55D-2J-lNc">
+                                                <rect key="frame" x="161" y="107" width="19" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="-1000" maxValue="1000" id="zCe-1j-QcH"/>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="NGv-q8-6Zd"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority3" id="JHU-hh-9wn"/>
+                                                </connections>
+                                            </stepper>
+                                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDR-T6-3pH">
+                                                <rect key="frame" x="161" y="83" width="19" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="-1000" maxValue="1000" id="p78-jr-lyb"/>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="TO4-ma-hlK"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority4" id="lO9-Ub-NI4"/>
+                                                </connections>
+                                            </stepper>
+                                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ND-ea-ZkD">
+                                                <rect key="frame" x="161" y="60" width="19" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="-1000" maxValue="1000" id="83F-tx-Bgh"/>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="t2q-Hf-CoI"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority5" id="eth-FL-ln0"/>
+                                                </connections>
+                                            </stepper>
+                                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iWK-1L-9FX">
+                                                <rect key="frame" x="161" y="27" width="19" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="-1000" maxValue="1000" id="OqB-KN-MaD"/>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="Gio-NI-Xmh"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority6" id="SZp-Q6-cU9"/>
+                                                </connections>
+                                            </stepper>
+                                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-pc-Xrt">
+                                                <rect key="frame" x="161" y="2" width="19" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="-1000" maxValue="1000" id="gd8-1o-EcM"/>
+                                                <connections>
+                                                    <action selector="editFieldAction:" target="wyg-tK-EQJ" id="wMh-eQ-O8j"/>
+                                                    <binding destination="wyg-tK-EQJ" name="value" keyPath="self.priority7" id="K9e-5V-Rxm"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="192" id="cId-Eh-jtv"/>
+                                            <constraint firstAttribute="height" constant="196" id="lAd-XC-ocD"/>
+                                        </constraints>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-Rs-w0q">
+                                        <rect key="frame" x="93" y="253" width="215" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Visibility Priorities: (-1000 to 1000)" id="s34-Kr-pgl">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="p4i-dQ-vyh">
+                                        <rect key="frame" x="68" y="7" width="264" height="36"/>
+                                        <subviews>
+                                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-2f-o7L" userLabel="Last Button Width">
+                                                <rect key="frame" x="160" y="9" width="96" height="19"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="500" doubleValue="45" tickMarkPosition="above" sliderType="linear" id="1sv-aI-ymu"/>
+                                                <connections>
+                                                    <action selector="sliderAction:" target="wyg-tK-EQJ" id="fuO-ny-gjL"/>
+                                                    <outlet property="nextKeyView" destination="Q8f-Wh-y4i" id="h8b-Yz-E7F"/>
+                                                </connections>
+                                            </slider>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DdA-Rm-Dkw">
+                                                <rect key="frame" x="10" y="11" width="146" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Far Right Button Width:" id="v65-bP-kTw">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="FxL-Em-gdE"/>
+                                            <constraint firstAttribute="width" constant="264" id="QSs-4C-pRE"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TdL-Rs-w0q" firstAttribute="centerX" secondItem="eCu-7j-9g6" secondAttribute="centerX" constant="-9.5" id="2Em-OB-hZd"/>
+                                    <constraint firstItem="p4i-dQ-vyh" firstAttribute="centerX" secondItem="eCu-7j-9g6" secondAttribute="centerX" constant="-10" id="3rl-1Q-Fdm"/>
+                                    <constraint firstItem="eCu-7j-9g6" firstAttribute="top" secondItem="TdL-Rs-w0q" secondAttribute="bottom" constant="6" id="6Pj-lo-Nuc"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="gGA-pg-UWj" secondAttribute="leading" constant="20" id="6VN-sZ-v08"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="8lo-w3-LFc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="DqF-aw-VE3"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="gGA-pg-UWj" secondAttribute="centerX" id="FYo-ud-LNw"/>
+                                    <constraint firstItem="TdL-Rs-w0q" firstAttribute="top" secondItem="gGA-pg-UWj" secondAttribute="top" constant="50" id="NvZ-wo-BKV"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" id="gVw-Sb-mXC"/>
+                                    <constraint firstItem="TdL-Rs-w0q" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="13" id="kGY-hF-cFl"/>
+                                    <constraint firstItem="eCu-7j-9g6" firstAttribute="centerX" secondItem="gGA-pg-UWj" secondAttribute="centerX" constant="10" id="wjn-z7-Wz6"/>
+                                    <constraint firstItem="p4i-dQ-vyh" firstAttribute="top" secondItem="eCu-7j-9g6" secondAttribute="bottom" constant="8" id="y0V-H0-BsE"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gGA-pg-UWj" secondAttribute="bottom" id="Tse-Ei-OM6"/>
+                            <constraint firstAttribute="trailing" secondItem="gGA-pg-UWj" secondAttribute="trailing" id="Vn6-IC-FEE"/>
+                            <constraint firstItem="gGA-pg-UWj" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="lBv-d1-byE"/>
+                            <constraint firstItem="gGA-pg-UWj" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="lXd-t8-LNG"/>
+                        </constraints>
+                    </view>
+                    <touchBar key="touchBar" id="x4A-3S-ffN" userLabel="NSTouchBar">
+                        <touchBarItems>
+                            <touchBarItem identifier="com.TouchbarCatalog.visibility.button1" id="niF-U8-C5Z">
+                                <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.visibility.button1" id="cdt-9z-Mwx">
+                                    <button key="view" verticalHuggingPriority="750" id="mTb-j0-Ag4">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Giv-2j-xDX"/>
+                                            <constraint firstAttribute="width" constant="72" id="pQ1-i8-sxu"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Button1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zZZ-yr-RoW">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="72" height="31"/>
+                            </touchBarItem>
+                            <touchBarItem identifier="com.TouchbarCatalog.visibility.button2" id="mU8-UR-7aj">
+                                <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.visibility.button2" id="BOA-Yv-y3s">
+                                    <button key="view" verticalHuggingPriority="750" id="HlY-Fr-sze">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="PVZ-dk-r6E"/>
+                                            <constraint firstAttribute="height" constant="30" id="StY-um-zWF"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Button2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VlM-Fm-b8T">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="72" height="30"/>
+                            </touchBarItem>
+                            <touchBarGroupItem id="erX-zk-yyn" userLabel="NSGroupTouchBarItem">
+                                <touchBar key="groupTouchBar" id="1oN-gc-Hz2" userLabel="NSTouchBar">
+                                    <touchBarItems>
+                                        <touchBarItem identifier="com.TouchbarCatalog.visibility.button3" id="D4x-hb-HaJ" userLabel="Button3">
+                                            <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.visibility.button3" id="UXD-Yc-NN7">
+                                                <button key="view" verticalHuggingPriority="750" id="aGg-l3-19j" userLabel="Button">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="FWY-6z-ocS"/>
+                                                        <constraint firstAttribute="width" constant="70" id="nVg-Jh-YTu"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Button3" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dve-yU-LHH">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system" size="15"/>
+                                                    </buttonCell>
+                                                </button>
+                                            </viewController>
+                                            <size key="designTimeSize" width="70" height="30"/>
+                                        </touchBarItem>
+                                        <touchBarItem identifier="com.TouchbarCatalog.visibility.button4" id="AQ1-p3-4xI">
+                                            <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.visibility.button4" id="50d-dL-rg6">
+                                                <button key="view" verticalHuggingPriority="750" id="xaV-7V-v7a">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="w9r-VJ-Cto"/>
+                                                        <constraint firstAttribute="height" constant="30" id="xRn-NS-EY0"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Button4" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rBb-37-N6A">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system" size="15"/>
+                                                    </buttonCell>
+                                                </button>
+                                            </viewController>
+                                            <size key="designTimeSize" width="70" height="30"/>
+                                        </touchBarItem>
+                                        <touchBarItem identifier="com.TouchbarCatalog.visibility.button5" id="0fr-gY-aQX" userLabel="Button5">
+                                            <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.visibility.button5" id="cjX-Dr-8u5">
+                                                <button key="view" verticalHuggingPriority="750" id="4VN-w5-rRh" userLabel="Button">
+                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="72" id="PxF-oG-7TN"/>
+                                                        <constraint firstAttribute="height" constant="30" id="ZiB-dc-1gB"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Button5" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4Yn-nh-zda">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system" size="15"/>
+                                                    </buttonCell>
+                                                </button>
+                                            </viewController>
+                                            <size key="designTimeSize" width="72" height="30"/>
+                                        </touchBarItem>
+                                    </touchBarItems>
+                                </touchBar>
+                            </touchBarGroupItem>
+                            <touchBarItem identifier="com.TouchbarCatalog.visibility.button6" id="7fd-Ow-W25">
+                                <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.visibility.button6" id="qOV-7e-pDS">
+                                    <button key="view" verticalHuggingPriority="750" id="LuL-Cl-kiU" userLabel="Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="rs6-rB-11x"/>
+                                            <constraint firstAttribute="width" constant="72" id="wwK-JA-ti7"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Button6" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1VG-As-276">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="72" height="31"/>
+                            </touchBarItem>
+                            <touchBarItem identifier="com.TouchbarCatalog.visibility.button7" id="twO-lP-uqr">
+                                <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.visibility.button7" id="c1o-Sp-i3f">
+                                    <button key="view" verticalHuggingPriority="750" id="nK6-Sf-kLg" userLabel="Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="p0u-HN-wBX"/>
+                                            <constraint firstAttribute="height" constant="30" id="qAh-WK-WeP"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Button7" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iVK-bt-ZpT">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="72" height="31"/>
+                            </touchBarItem>
+                            <touchBarItem visibilityPriority="1000" id="ena-zO-qcP">
+                                <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.lastButton" id="saI-1p-12t">
+                                    <button key="view" verticalHuggingPriority="750" id="ycH-yL-VQv">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Last" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ztu-KH-R5F">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="72" height="30"/>
+                            </touchBarItem>
+                            <touchBarItemOtherItemsProxy identifier="NSTouchBarItemIdentifierOtherItemsProxy" id="FaB-BY-jjS"/>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <outlet property="button1" destination="niF-U8-C5Z" id="VMo-cM-x7R"/>
+                        <outlet property="button2" destination="mU8-UR-7aj" id="qrq-P5-viW"/>
+                        <outlet property="button3" destination="D4x-hb-HaJ" id="fUt-S6-Lki"/>
+                        <outlet property="button4" destination="AQ1-p3-4xI" id="mb6-4w-NmD"/>
+                        <outlet property="button5" destination="0fr-gY-aQX" id="UV3-Qy-DXt"/>
+                        <outlet property="button6" destination="7fd-Ow-W25" id="uCS-po-NRh"/>
+                        <outlet property="button7" destination="twO-lP-uqr" id="XsQ-Rb-CAm"/>
+                        <outlet property="lastButtonItem" destination="ena-zO-qcP" id="ZW7-02-u3s"/>
+                        <outlet property="lastButtonWidthSlider" destination="B5g-2f-o7L" id="wgY-Pc-mgh"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="95"/>
+        </scene>
+    </scenes>
+</document>

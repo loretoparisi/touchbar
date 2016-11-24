@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2656" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text View View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="TextViewViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="pt6-7H-Ljf">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="263" width="414" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows how to override the NSTextView NSTouchBar" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="d14-Uk-RXb">
+                                        <rect key="frame" x="158" y="239" width="134" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Custom Touch Bar" bezelStyle="regularSquare" imagePosition="left" inset="2" id="TYq-WN-vXT">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customTouchBarAction:" target="wyg-tK-EQJ" id="tJl-yE-9um"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZb-he-LmW">
+                                        <rect key="frame" x="20" y="20" width="410" height="213"/>
+                                        <clipView key="contentView" id="ONy-4x-dBF">
+                                            <rect key="frame" x="1" y="1" width="393" height="211"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="xEH-aH-ejM">
+                                                    <rect key="frame" x="0.0" y="-1" width="393" height="211"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="minSize" width="393" height="211"/>
+                                                    <size key="maxSize" width="463" height="10000000"/>
+                                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="wyg-tK-EQJ" id="nQP-GM-n0z"/>
+                                                    </connections>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Sci-nz-cBt">
+                                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="5Fe-nz-sIv">
+                                            <rect key="frame" x="394" y="1" width="15" height="211"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="ZZb-he-LmW" secondAttribute="leading" id="AsO-UT-SkV"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="pt6-7H-Ljf" secondAttribute="leading" constant="20" symbolic="YES" id="DKG-gf-Opt"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZZb-he-LmW" secondAttribute="bottom" constant="20" symbolic="YES" id="FRF-9I-ksh"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="JXe-z9-g2t"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="KqY-y1-Qeb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Ota-16-8ez"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="d14-Uk-RXb" secondAttribute="centerX" id="Pte-ID-Gew"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="trailing" secondItem="ZZb-he-LmW" secondAttribute="trailing" id="b1b-t8-1ar"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="pt6-7H-Ljf" secondAttribute="top" constant="20" symbolic="YES" id="cXt-pS-0wa"/>
+                                    <constraint firstItem="ZZb-he-LmW" firstAttribute="top" secondItem="d14-Uk-RXb" secondAttribute="bottom" constant="8" symbolic="YES" id="evh-8G-Hfc"/>
+                                    <constraint firstItem="d14-Uk-RXb" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="8" symbolic="YES" id="ttZ-hA-FSZ"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="pt6-7H-Ljf" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="N4R-Qm-r6k"/>
+                            <constraint firstAttribute="bottom" secondItem="pt6-7H-Ljf" secondAttribute="bottom" id="NDb-mg-6DD"/>
+                            <constraint firstAttribute="trailing" secondItem="pt6-7H-Ljf" secondAttribute="trailing" id="piR-Lf-Pnf"/>
+                            <constraint firstItem="pt6-7H-Ljf" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="tVP-BF-78Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customTouchBarCheckbox" destination="d14-Uk-RXb" id="Rss-1w-VXP"/>
+                        <outlet property="textView" destination="xEH-aH-ejM" id="aXs-l3-eK5"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="87"/>
+        </scene>
+    </scenes>
+</document>

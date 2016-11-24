@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Services View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController storyboardIdentifier="ServicesViewController" id="wyg-tK-EQJ" customClass="ServicesViewController" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="57"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Fug-ZG-fjt">
+                                <rect key="frame" x="0.0" y="0.0" width="381" height="57"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="33" y="20" width="314" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSSharingServicePickerTouchBarItem" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="381" id="2Dv-9a-FgG"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="Fug-ZG-fjt" secondAttribute="centerX" id="85t-95-NMj"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="Fug-ZG-fjt" secondAttribute="leading" constant="35" id="Wvi-94-mw8"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="Fug-ZG-fjt" secondAttribute="top" constant="20" symbolic="YES" id="cxZ-kD-WVu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="lYy-NY-9pc"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fug-ZG-fjt" secondAttribute="trailing" id="05U-rF-xUj"/>
+                            <constraint firstItem="Fug-ZG-fjt" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="3Dt-Fq-laA"/>
+                            <constraint firstItem="Fug-ZG-fjt" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="BjY-Nn-Seq"/>
+                            <constraint firstAttribute="bottom" secondItem="Fug-ZG-fjt" secondAttribute="bottom" id="ZuA-hk-URi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.5" y="-44.5"/>
+        </scene>
+    </scenes>
+</document>

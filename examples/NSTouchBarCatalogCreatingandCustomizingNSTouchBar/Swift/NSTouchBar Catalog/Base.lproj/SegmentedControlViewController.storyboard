@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2656" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="7104"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.1"/>
+    </dependencies>
+    <scenes>
+        <!--Segmented View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController storyboardIdentifier="SegmentedViewController" id="wyg-tK-EQJ" customClass="SegmentedViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                <rect key="frame" x="18" y="263" width="414" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSCustomTouchBarItem using an NSSegmentedControl" id="Y7l-Vu-Jda">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" constant="20" symbolic="YES" id="Jgt-aK-HFf"/>
+                            <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="gTk-YC-o0Z"/>
+                            <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" constant="20" symbolic="YES" id="jGS-c3-Z8k"/>
+                        </constraints>
+                    </view>
+                    <touchBar key="touchBar" id="Ta0-el-FMM" userLabel="NSTouchBar">
+                        <touchBarItems>
+                            <touchBarItem customizationLabel="com.TouchBarCatalog.segmentedControl1" id="1rx-fy-avz" userLabel="Bar 1, 2">
+                                <viewController key="viewController" storyboardIdentifier="TouchBarSegment1" id="nIL-vm-ib4">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" id="p1e-ax-ac3">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="5YI-Jp-Jbq">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment label="1"/>
+                                                <segment label="2" tag="1"/>
+                                            </segments>
+                                        </segmentedCell>
+                                        <connections>
+                                            <action selector="segmentAction:" target="wyg-tK-EQJ" id="Vzm-ku-yFO"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </viewController>
+                                <size key="designTimeSize" width="152" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem customizationLabel="com.TouchBarCatalog.segmentedControl2" id="sr6-rj-aaJ" userLabel="Bar 1, 2">
+                                <viewController key="viewController" storyboardIdentifier="TouchBarSegment2" id="LqR-V9-DV7">
+                                    <segmentedControl key="view" verticalHuggingPriority="750" misplaced="YES" id="Wie-6a-EWN">
+                                        <rect key="frame" x="0.0" y="-2" width="152" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="separated" trackingMode="selectOne" id="XL0-x5-0mA">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment label="1" image="Accounts"/>
+                                                <segment label="2" image="Bookmark" selected="YES" tag="1"/>
+                                            </segments>
+                                        </segmentedCell>
+                                        <connections>
+                                            <action selector="segmentAction:" target="wyg-tK-EQJ" id="a7V-Se-wm4"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </viewController>
+                                <size key="designTimeSize" width="152" height="30"/>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Accounts" width="15" height="15"/>
+        <image name="Bookmark" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Candidate List View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="CandidateListViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="479" height="188"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-cf-Tln">
+                                <rect key="frame" x="0.0" y="0.0" width="479" height="188"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="151" width="444" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSCustomTouchBarItem with Candidate List" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fah-AS-Ewt">
+                                        <rect key="frame" x="23" y="122" width="429" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(Enter a name found in your Contacts, select it from the candidate list)" id="S8v-mQ-ga7">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Tx-6g-UBz">
+                                        <rect key="frame" x="25" y="92" width="425" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="HPU-yJ-boZ">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <outlet property="delegate" destination="wyg-tK-EQJ" id="ieL-dy-VAu"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fah-AS-Ewt" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="12" id="4TV-Mo-DQe"/>
+                                    <constraint firstItem="7Tx-6g-UBz" firstAttribute="top" secondItem="Fah-AS-Ewt" secondAttribute="bottom" constant="8" symbolic="YES" id="7KD-k0-olE"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="ZLP-cf-Tln" secondAttribute="top" constant="20" symbolic="YES" id="IZ3-6H-WnJ"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="ZLP-cf-Tln" secondAttribute="centerX" id="K0G-F8-3md"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="ZLP-cf-Tln" secondAttribute="leading" constant="20" symbolic="YES" id="PGQ-0E-rfP"/>
+                                    <constraint firstItem="7Tx-6g-UBz" firstAttribute="trailing" secondItem="Fah-AS-Ewt" secondAttribute="trailing" id="VyL-Vm-u91"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="188" id="YWN-UL-oYA"/>
+                                    <constraint firstItem="Fah-AS-Ewt" firstAttribute="leading" secondItem="ZLP-cf-Tln" secondAttribute="leading" constant="25" id="mVn-Go-Cbz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="479" id="pNh-W4-owg"/>
+                                    <constraint firstItem="7Tx-6g-UBz" firstAttribute="leading" secondItem="Fah-AS-Ewt" secondAttribute="leading" id="wfh-Q7-pNt"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZLP-cf-Tln" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="MlT-Id-bQY"/>
+                            <constraint firstItem="ZLP-cf-Tln" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="NGp-xX-95g"/>
+                            <constraint firstAttribute="bottom" secondItem="ZLP-cf-Tln" secondAttribute="bottom" id="iBe-xh-HxV"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLP-cf-Tln" secondAttribute="trailing" id="xqr-NQ-5cU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="7Tx-6g-UBz" id="XvL-Gh-h9I"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161.5" y="38"/>
+        </scene>
+    </scenes>
+</document>

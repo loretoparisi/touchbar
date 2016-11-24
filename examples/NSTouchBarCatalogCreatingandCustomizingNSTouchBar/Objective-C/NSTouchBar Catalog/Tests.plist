@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>   
+    <key>tests</key>
+    <array>
+        <dict>
+            <key>testName</key>
+            <string>Button</string>
+            <key>testKind</key>
+            <string>ButtonViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Segmented Control</string>
+            <key>testKind</key>
+            <string>SegmentedControlViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Group</string>
+            <key>testKind</key>
+            <string>GroupViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Fancy Group</string>
+            <key>testKind</key>
+            <string>FancyGroupViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Custom View</string>
+            <key>testKind</key>
+            <string>CustomViewViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Scroll View</string>
+            <key>testKind</key>
+            <string>ScrollViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Color Picker</string>
+            <key>testKind</key>
+            <string>ColorPickerViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Slider</string>
+            <key>testKind</key>
+            <string>SliderViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Popover</string>
+            <key>testKind</key>
+            <string>PopoverViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Popover with Scrubber</string>
+            <key>testKind</key>
+            <string>PopoverScrubberViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Scrubber</string>
+            <key>testKind</key>
+            <string>ScrubberViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Text Field Candidate List</string>
+            <key>testKind</key>
+            <string>CandidateListViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Text View</string>
+            <key>testKind</key>
+            <string>TextViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Sharing Service</string>
+            <key>testKind</key>
+            <string>ServicesViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>Visibility Priority</string>
+            <key>testKind</key>
+            <string>VisibilityViewController</string>
+        </dict>
+        <dict>
+            <key>testName</key>
+            <string>TouchBar Images</string>
+            <key>testKind</key>
+            <string>TouchBarImagesViewController</string>
+        </dict>
+    </array>
+</dict>
+</plist>

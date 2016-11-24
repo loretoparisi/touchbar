@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popover Scrubber View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="PopoverScrubberViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="57"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-is-swg">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="57"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="20" width="414" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSPopoverTouchBarItem with an NSScrubber" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="bs1-Vh-Cre"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="hxp-by-z6K"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="Dfu-is-swg" secondAttribute="top" constant="20" symbolic="YES" id="iGg-d1-AL4"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="Dfu-is-swg" secondAttribute="leading" constant="20" symbolic="YES" id="idh-3o-eux"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="yP0-JF-kmZ"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Dfu-is-swg" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="ABf-bm-jBP"/>
+                            <constraint firstItem="Dfu-is-swg" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="Flv-6U-EkY"/>
+                            <constraint firstAttribute="trailing" secondItem="Dfu-is-swg" secondAttribute="trailing" id="aX2-aT-0Nh"/>
+                            <constraint firstAttribute="bottom" secondItem="Dfu-is-swg" secondAttribute="bottom" id="eNe-Go-N15"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="-27.5"/>
+        </scene>
+    </scenes>
+</document>

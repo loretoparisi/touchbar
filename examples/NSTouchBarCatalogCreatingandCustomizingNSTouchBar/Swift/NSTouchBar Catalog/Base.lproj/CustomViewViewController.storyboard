@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom View View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="CustomViewViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="130"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="qhj-Bc-zWx">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="130"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="93" width="414" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSCustomTouchBarItem using an NSView" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button tag="1000" translatesAutoresizingMaskIntoConstraints="NO" id="jff-vM-ZFg">
+                                        <rect key="frame" x="132" y="68" width="142" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Using Touch Events" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="8Pk-f7-YCY">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="choiceAction:" target="wyg-tK-EQJ" id="xuK-G6-ket"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="MSF-oH-xpB">
+                                        <rect key="frame" x="132" y="46" width="187" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Using Gesture Recognizers" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="v8c-FU-xFm">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="choiceAction:" target="wyg-tK-EQJ" id="RTv-wp-vII"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-Xe-2EH">
+                                        <rect key="frame" x="18" y="17" width="414" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="410" id="lWC-i1-eWB"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="ugV-3a-rDd">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MSF-oH-xpB" firstAttribute="centerX" secondItem="3Dm-fu-hsv" secondAttribute="centerX" id="5xX-GK-Lsn"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="qhj-Bc-zWx" secondAttribute="top" constant="20" id="GqI-vr-mn0"/>
+                                    <constraint firstItem="MSF-oH-xpB" firstAttribute="centerX" secondItem="x6x-Xe-2EH" secondAttribute="centerX" id="JNR-5k-FcZ"/>
+                                    <constraint firstItem="MSF-oH-xpB" firstAttribute="top" secondItem="jff-vM-ZFg" secondAttribute="bottom" constant="6" symbolic="YES" id="KPs-bw-evV"/>
+                                    <constraint firstItem="jff-vM-ZFg" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="8" symbolic="YES" id="MQi-EA-UEO"/>
+                                    <constraint firstItem="jff-vM-ZFg" firstAttribute="leading" secondItem="MSF-oH-xpB" secondAttribute="leading" id="Z10-Wa-Bfo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="103" id="ZXw-OG-QYH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="eqV-b3-R9T"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="centerX" secondItem="qhj-Bc-zWx" secondAttribute="centerX" id="fnH-HV-etE"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="qhj-Bc-zWx" secondAttribute="leading" constant="20" id="rRB-dg-fZI"/>
+                                    <constraint firstItem="x6x-Xe-2EH" firstAttribute="top" secondItem="MSF-oH-xpB" secondAttribute="bottom" constant="16" id="uzH-JN-Rrr"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qhj-Bc-zWx" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="A2a-pW-x3E"/>
+                            <constraint firstItem="qhj-Bc-zWx" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="XhV-5b-PzU"/>
+                            <constraint firstAttribute="bottom" secondItem="qhj-Bc-zWx" secondAttribute="bottom" id="YUg-zc-IVO"/>
+                            <constraint firstAttribute="trailing" secondItem="qhj-Bc-zWx" secondAttribute="trailing" id="cKq-2e-L8c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackLabel" destination="x6x-Xe-2EH" id="Fv6-jz-dGV"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="94"/>
+        </scene>
+    </scenes>
+</document>

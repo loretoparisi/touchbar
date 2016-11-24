@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530D35A61D8A5C51001AE536 /* CustomViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530D35A41D8A5C51001AE536 /* CustomViewViewController.storyboard */; };
+		53194CF81D8B319C00A3CB35 /* ScrubberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53194CF51D8B319C00A3CB35 /* ScrubberViewController.m */; };
+		53194CF91D8B319C00A3CB35 /* ThumbnailItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53194CF71D8B319C00A3CB35 /* ThumbnailItemView.m */; };
+		53194CFF1D8B31B600A3CB35 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53194CFC1D8B31B600A3CB35 /* CustomView.m */; };
+		53194D001D8B31B600A3CB35 /* CustomViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53194CFE1D8B31B600A3CB35 /* CustomViewViewController.m */; };
+		531EEB901DA810E800340343 /* ButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531EEB8E1DA810E800340343 /* ButtonViewController.storyboard */; };
+		531FE2EE1D89BBD400908205 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 531FE2E51D89BBD400908205 /* AppDelegate.m */; };
+		531FE2F01D89BBD400908205 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531FE2E91D89BBD400908205 /* MasterViewController.m */; };
+		531FE2F11D89BBD400908205 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531FE2EB1D89BBD400908205 /* SplitViewController.m */; };
+		531FE2F21D89BBD400908205 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531FE2ED1D89BBD400908205 /* WindowController.m */; };
+		531FE2F41D89BBDC00908205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531FE2F31D89BBDC00908205 /* Assets.xcassets */; };
+		531FE2F71D89BBE500908205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531FE2F51D89BBE500908205 /* Main.storyboard */; };
+		531FE2FA1D89BBF900908205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 531FE2F91D89BBF900908205 /* main.m */; };
+		532586531D8B44BF0065933B /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532586521D8B44BF0065933B /* ServicesViewController.m */; };
+		532586561D8B46490065933B /* ServicesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532586541D8B46490065933B /* ServicesViewController.storyboard */; };
+		53263CD21D9D87BB002D1DFC /* VisibilityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53263CD01D9D87BB002D1DFC /* VisibilityViewController.storyboard */; };
+		53263CD51D9D883F002D1DFC /* VisbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53263CD31D9D883F002D1DFC /* VisbilityViewController.m */; };
+		5333F8C31D944E0400874D18 /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5333F8C21D944E0400874D18 /* PopoverViewController.m */; };
+		5333F8C61D944E5100874D18 /* PopoverScrubberViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5333F8C41D944E5100874D18 /* PopoverScrubberViewController.storyboard */; };
+		53463EB11D8ADE9A003EB6DC /* CandidateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53463EA81D8ADE9A003EB6DC /* CandidateListViewController.m */; };
+		53463EB21D8ADE9A003EB6DC /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53463EAA1D8ADE9A003EB6DC /* ColorPickerViewController.m */; };
+		53463EB31D8ADE9A003EB6DC /* PopoverScrubberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53463EAC1D8ADE9A003EB6DC /* PopoverScrubberViewController.m */; };
+		53463EB41D8ADE9A003EB6DC /* SegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53463EAE1D8ADE9A003EB6DC /* SegmentedViewController.m */; };
+		53463EB51D8ADE9A003EB6DC /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53463EB01D8ADE9A003EB6DC /* SliderViewController.m */; };
+		5353A3DA1DB016A600027CC7 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5353A3D91DB016A600027CC7 /* ScrollViewController.m */; };
+		5381BDB41D9B2F330009DB96 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5381BDB31D9B2F330009DB96 /* ButtonViewController.m */; };
+		5381BDB71D9B34690009DB96 /* IconTextScrubberBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5381BDB61D9B34690009DB96 /* IconTextScrubberBarItem.m */; };
+		53B0D9041D9B28F200AD5032 /* ScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B0D9021D9B28F200AD5032 /* ScrollViewController.storyboard */; };
+		53B328D81D89CE3100947CE2 /* CandidateListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B328CC1D89CE3100947CE2 /* CandidateListViewController.storyboard */; };
+		53B328D91D89CE3100947CE2 /* ColorPickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B328CE1D89CE3100947CE2 /* ColorPickerViewController.storyboard */; };
+		53B328DA1D89CE3100947CE2 /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B328D01D89CE3100947CE2 /* PopoverViewController.storyboard */; };
+		53B328DB1D89CE3100947CE2 /* ScrubberViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B328D21D89CE3100947CE2 /* ScrubberViewController.storyboard */; };
+		53B328DC1D89CE3100947CE2 /* SegmentedControlViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B328D41D89CE3100947CE2 /* SegmentedControlViewController.storyboard */; };
+		53B328DD1D89CE3100947CE2 /* SliderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B328D61D89CE3100947CE2 /* SliderViewController.storyboard */; };
+		53B328E21D89DC6A00947CE2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 53B328DE1D89DC6A00947CE2 /* Credits.rtf */; };
+		53B328E31D89DC6A00947CE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53B328E01D89DC6A00947CE2 /* InfoPlist.strings */; };
+		53B328E51D89DF9B00947CE2 /* Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53B328E41D89DF9B00947CE2 /* Tests.plist */; };
+		53B74DFF1D8B15CC00DE6C53 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B74DFE1D8B15CC00DE6C53 /* GroupViewController.m */; };
+		53B74E021D8B1A0200DE6C53 /* GroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B74E001D8B1A0200DE6C53 /* GroupViewController.storyboard */; };
+		53BCDE8D1D99909000F3488D /* ScrubberBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BCDE8C1D99909000F3488D /* ScrubberBackgroundView.m */; };
+		53BCDE9B1D99936100F3488D /* CustomBackgroundScrubberSelectionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BCDE961D99936100F3488D /* CustomBackgroundScrubberSelectionStyle.m */; };
+		53BCDE9C1D99936100F3488D /* SelectionBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BCDE981D99936100F3488D /* SelectionBackgroundView.m */; };
+		53BCDE9D1D99936100F3488D /* SelectionOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BCDE9A1D99936100F3488D /* SelectionOverlayView.m */; };
+		53BCDEA01D99942E00F3488D /* CustomOverlayScrubberSelectionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BCDE9F1D99942E00F3488D /* CustomOverlayScrubberSelectionStyle.m */; };
+		53EBCE0E1D904B880082DD37 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCE0D1D904B880082DD37 /* TextViewController.m */; };
+		53EBCE111D904C580082DD37 /* TextViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCE0F1D904C580082DD37 /* TextViewController.storyboard */; };
+		53EBCE171D9065B80082DD37 /* FancyGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCE161D9065B80082DD37 /* FancyGroupViewController.m */; };
+		53EBCE1A1D9066080082DD37 /* FancyGroupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCE181D9066080082DD37 /* FancyGroupViewController.storyboard */; };
+		53F2950C1DAE9B7A00E204E8 /* CollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F295081DAE9B7A00E204E8 /* CollectionViewItem.m */; };
+		53F2950D1DAE9B7A00E204E8 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F295091DAE9B7A00E204E8 /* CollectionViewItem.xib */; };
+		53F2950E1DAE9B7A00E204E8 /* TouchBarImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F2950B1DAE9B7A00E204E8 /* TouchBarImagesViewController.m */; };
+		53F295121DAE9C3000E204E8 /* TouchBarImagesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F295101DAE9C3000E204E8 /* TouchBarImagesViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		530D35A51D8A5C51001AE536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/CustomViewViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53194CF41D8B319C00A3CB35 /* ScrubberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrubberViewController.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/ScrubberViewController.h"; sourceTree = SOURCE_ROOT; };
+		53194CF51D8B319C00A3CB35 /* ScrubberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrubberViewController.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/ScrubberViewController.m"; sourceTree = SOURCE_ROOT; };
+		53194CF61D8B319C00A3CB35 /* ThumbnailItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbnailItemView.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/ThumbnailItemView.h"; sourceTree = SOURCE_ROOT; };
+		53194CF71D8B319C00A3CB35 /* ThumbnailItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbnailItemView.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/ThumbnailItemView.m"; sourceTree = SOURCE_ROOT; };
+		53194CFB1D8B31B600A3CB35 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = "NSTouchBar Catalog/TestViewControllers/CustomViewController/CustomView.h"; sourceTree = SOURCE_ROOT; };
+		53194CFC1D8B31B600A3CB35 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = "NSTouchBar Catalog/TestViewControllers/CustomViewController/CustomView.m"; sourceTree = SOURCE_ROOT; };
+		53194CFD1D8B31B600A3CB35 /* CustomViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomViewViewController.h; path = "NSTouchBar Catalog/TestViewControllers/CustomViewController/CustomViewViewController.h"; sourceTree = SOURCE_ROOT; };
+		53194CFE1D8B31B600A3CB35 /* CustomViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomViewViewController.m; path = "NSTouchBar Catalog/TestViewControllers/CustomViewController/CustomViewViewController.m"; sourceTree = SOURCE_ROOT; };
+		531EEB8F1DA810E800340343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/ButtonViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		531FE2E41D89BBD400908205 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "NSTouchBar Catalog/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		531FE2E51D89BBD400908205 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "NSTouchBar Catalog/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		531FE2E81D89BBD400908205 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = "NSTouchBar Catalog/MasterViewController.h"; sourceTree = SOURCE_ROOT; };
+		531FE2E91D89BBD400908205 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = "NSTouchBar Catalog/MasterViewController.m"; sourceTree = SOURCE_ROOT; };
+		531FE2EA1D89BBD400908205 /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplitViewController.h; path = "NSTouchBar Catalog/SplitViewController.h"; sourceTree = SOURCE_ROOT; };
+		531FE2EB1D89BBD400908205 /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplitViewController.m; path = "NSTouchBar Catalog/SplitViewController.m"; sourceTree = SOURCE_ROOT; };
+		531FE2EC1D89BBD400908205 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WindowController.h; path = "NSTouchBar Catalog/WindowController.h"; sourceTree = SOURCE_ROOT; };
+		531FE2ED1D89BBD400908205 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WindowController.m; path = "NSTouchBar Catalog/WindowController.m"; sourceTree = SOURCE_ROOT; };
+		531FE2F31D89BBDC00908205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "NSTouchBar Catalog/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		531FE2F61D89BBE500908205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		531FE2F81D89BBF400908205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "NSTouchBar Catalog/Info.plist"; sourceTree = SOURCE_ROOT; };
+		531FE2F91D89BBF900908205 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "NSTouchBar Catalog/main.m"; sourceTree = SOURCE_ROOT; };
+		532586511D8B44BF0065933B /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServicesViewController.h; path = "NSTouchBar Catalog/TestViewControllers/ServicesViewController.h"; sourceTree = SOURCE_ROOT; };
+		532586521D8B44BF0065933B /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServicesViewController.m; path = "NSTouchBar Catalog/TestViewControllers/ServicesViewController.m"; sourceTree = SOURCE_ROOT; };
+		532586551D8B46490065933B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/ServicesViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53263CD11D9D87BB002D1DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/VisibilityViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53263CD31D9D883F002D1DFC /* VisbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisbilityViewController.m; path = "NSTouchBar Catalog/TestViewControllers/VisbilityViewController.m"; sourceTree = SOURCE_ROOT; };
+		53263CD41D9D883F002D1DFC /* VisibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisibilityViewController.h; path = "NSTouchBar Catalog/TestViewControllers/VisibilityViewController.h"; sourceTree = SOURCE_ROOT; };
+		5333F8C11D944E0400874D18 /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopoverViewController.h; path = "NSTouchBar Catalog/TestViewControllers/PopoverViewController.h"; sourceTree = SOURCE_ROOT; };
+		5333F8C21D944E0400874D18 /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopoverViewController.m; path = "NSTouchBar Catalog/TestViewControllers/PopoverViewController.m"; sourceTree = SOURCE_ROOT; };
+		5333F8C51D944E5100874D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/PopoverScrubberViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53463EA71D8ADE9A003EB6DC /* CandidateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CandidateListViewController.h; path = "NSTouchBar Catalog/TestViewControllers/CandidateListViewController.h"; sourceTree = SOURCE_ROOT; };
+		53463EA81D8ADE9A003EB6DC /* CandidateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CandidateListViewController.m; path = "NSTouchBar Catalog/TestViewControllers/CandidateListViewController.m"; sourceTree = SOURCE_ROOT; };
+		53463EA91D8ADE9A003EB6DC /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPickerViewController.h; path = "NSTouchBar Catalog/TestViewControllers/ColorPickerViewController.h"; sourceTree = SOURCE_ROOT; };
+		53463EAA1D8ADE9A003EB6DC /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorPickerViewController.m; path = "NSTouchBar Catalog/TestViewControllers/ColorPickerViewController.m"; sourceTree = SOURCE_ROOT; };
+		53463EAB1D8ADE9A003EB6DC /* PopoverScrubberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopoverScrubberViewController.h; path = "NSTouchBar Catalog/TestViewControllers/PopoverScrubberViewController.h"; sourceTree = SOURCE_ROOT; };
+		53463EAC1D8ADE9A003EB6DC /* PopoverScrubberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopoverScrubberViewController.m; path = "NSTouchBar Catalog/TestViewControllers/PopoverScrubberViewController.m"; sourceTree = SOURCE_ROOT; };
+		53463EAD1D8ADE9A003EB6DC /* SegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentedViewController.h; path = "NSTouchBar Catalog/TestViewControllers/SegmentedViewController.h"; sourceTree = SOURCE_ROOT; };
+		53463EAE1D8ADE9A003EB6DC /* SegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegmentedViewController.m; path = "NSTouchBar Catalog/TestViewControllers/SegmentedViewController.m"; sourceTree = SOURCE_ROOT; };
+		53463EAF1D8ADE9A003EB6DC /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SliderViewController.h; path = "NSTouchBar Catalog/TestViewControllers/SliderViewController.h"; sourceTree = SOURCE_ROOT; };
+		53463EB01D8ADE9A003EB6DC /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SliderViewController.m; path = "NSTouchBar Catalog/TestViewControllers/SliderViewController.m"; sourceTree = SOURCE_ROOT; };
+		5353A3D81DB016A600027CC7 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewController.h; path = "NSTouchBar Catalog/TestViewControllers/ScrollViewController/ScrollViewController.h"; sourceTree = SOURCE_ROOT; };
+		5353A3D91DB016A600027CC7 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewController.m; path = "NSTouchBar Catalog/TestViewControllers/ScrollViewController/ScrollViewController.m"; sourceTree = SOURCE_ROOT; };
+		5381BDB21D9B2F330009DB96 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonViewController.h; path = "NSTouchBar Catalog/TestViewControllers/ButtonViewController.h"; sourceTree = SOURCE_ROOT; };
+		5381BDB31D9B2F330009DB96 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonViewController.m; path = "NSTouchBar Catalog/TestViewControllers/ButtonViewController.m"; sourceTree = SOURCE_ROOT; };
+		5381BDB51D9B34690009DB96 /* IconTextScrubberBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IconTextScrubberBarItem.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/IconTextScrubberBarItem.h"; sourceTree = SOURCE_ROOT; };
+		5381BDB61D9B34690009DB96 /* IconTextScrubberBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IconTextScrubberBarItem.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/IconTextScrubberBarItem.m"; sourceTree = SOURCE_ROOT; };
+		53B0D9031D9B28F200AD5032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/ScrollViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53B328CD1D89CE3100947CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/CandidateListViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53B328CF1D89CE3100947CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/ColorPickerViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53B328D11D89CE3100947CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/PopoverViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53B328D31D89CE3100947CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/ScrubberViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53B328D51D89CE3100947CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/SegmentedControlViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53B328D71D89CE3100947CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/SliderViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53B328DF1D89DC6A00947CE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = "NSTouchBar Catalog/en.lproj/Credits.rtf"; sourceTree = SOURCE_ROOT; };
+		53B328E11D89DC6A00947CE2 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = "NSTouchBar Catalog/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		53B328E41D89DF9B00947CE2 /* Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tests.plist; path = "NSTouchBar Catalog/Tests.plist"; sourceTree = SOURCE_ROOT; };
+		53B74DFD1D8B15CC00DE6C53 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupViewController.h; path = "NSTouchBar Catalog/TestViewControllers/GroupViewController.h"; sourceTree = SOURCE_ROOT; };
+		53B74DFE1D8B15CC00DE6C53 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupViewController.m; path = "NSTouchBar Catalog/TestViewControllers/GroupViewController.m"; sourceTree = SOURCE_ROOT; };
+		53B74E011D8B1A0200DE6C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/GroupViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53BCDE8B1D99909000F3488D /* ScrubberBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrubberBackgroundView.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/ScrubberBackgroundView.h"; sourceTree = SOURCE_ROOT; };
+		53BCDE8C1D99909000F3488D /* ScrubberBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrubberBackgroundView.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/ScrubberBackgroundView.m"; sourceTree = SOURCE_ROOT; };
+		53BCDE951D99936100F3488D /* CustomBackgroundScrubberSelectionStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomBackgroundScrubberSelectionStyle.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/CustomBackgroundScrubberSelectionStyle.h"; sourceTree = SOURCE_ROOT; };
+		53BCDE961D99936100F3488D /* CustomBackgroundScrubberSelectionStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomBackgroundScrubberSelectionStyle.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/CustomBackgroundScrubberSelectionStyle.m"; sourceTree = SOURCE_ROOT; };
+		53BCDE971D99936100F3488D /* SelectionBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionBackgroundView.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/SelectionBackgroundView.h"; sourceTree = SOURCE_ROOT; };
+		53BCDE981D99936100F3488D /* SelectionBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionBackgroundView.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/SelectionBackgroundView.m"; sourceTree = SOURCE_ROOT; };
+		53BCDE991D99936100F3488D /* SelectionOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionOverlayView.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/SelectionOverlayView.h"; sourceTree = SOURCE_ROOT; };
+		53BCDE9A1D99936100F3488D /* SelectionOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionOverlayView.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/SelectionOverlayView.m"; sourceTree = SOURCE_ROOT; };
+		53BCDE9E1D99942E00F3488D /* CustomOverlayScrubberSelectionStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomOverlayScrubberSelectionStyle.h; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/CustomOverlayScrubberSelectionStyle.h"; sourceTree = SOURCE_ROOT; };
+		53BCDE9F1D99942E00F3488D /* CustomOverlayScrubberSelectionStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomOverlayScrubberSelectionStyle.m; path = "NSTouchBar Catalog/TestViewControllers/ScrubberViewController/Selection/CustomOverlayScrubberSelectionStyle.m"; sourceTree = SOURCE_ROOT; };
+		53DE4F291DA6BC3D003274F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		53EBCE0C1D904B880082DD37 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewController.h; path = "NSTouchBar Catalog/TestViewControllers/TextViewController.h"; sourceTree = SOURCE_ROOT; };
+		53EBCE0D1D904B880082DD37 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewController.m; path = "NSTouchBar Catalog/TestViewControllers/TextViewController.m"; sourceTree = SOURCE_ROOT; };
+		53EBCE101D904C580082DD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/TextViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53EBCE151D9065B80082DD37 /* FancyGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FancyGroupViewController.h; path = "NSTouchBar Catalog/TestViewControllers/FancyGroupViewController.h"; sourceTree = SOURCE_ROOT; };
+		53EBCE161D9065B80082DD37 /* FancyGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FancyGroupViewController.m; path = "NSTouchBar Catalog/TestViewControllers/FancyGroupViewController.m"; sourceTree = SOURCE_ROOT; };
+		53EBCE191D9066080082DD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/FancyGroupViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		53F295071DAE9B7A00E204E8 /* CollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewItem.h; path = "NSTouchBar Catalog/TestViewControllers/TouchbarImagesViewController/CollectionViewItem.h"; sourceTree = SOURCE_ROOT; };
+		53F295081DAE9B7A00E204E8 /* CollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewItem.m; path = "NSTouchBar Catalog/TestViewControllers/TouchbarImagesViewController/CollectionViewItem.m"; sourceTree = SOURCE_ROOT; };
+		53F295091DAE9B7A00E204E8 /* CollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewItem.xib; path = "NSTouchBar Catalog/TestViewControllers/TouchbarImagesViewController/CollectionViewItem.xib"; sourceTree = SOURCE_ROOT; };
+		53F2950A1DAE9B7A00E204E8 /* TouchBarImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchBarImagesViewController.h; path = "NSTouchBar Catalog/TestViewControllers/TouchbarImagesViewController/TouchBarImagesViewController.h"; sourceTree = SOURCE_ROOT; };
+		53F2950B1DAE9B7A00E204E8 /* TouchBarImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TouchBarImagesViewController.m; path = "NSTouchBar Catalog/TestViewControllers/TouchbarImagesViewController/TouchBarImagesViewController.m"; sourceTree = SOURCE_ROOT; };
+		53F295111DAE9C3000E204E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NSTouchBar Catalog/Base.lproj/TouchBarImagesViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		86D4E02F1B83BFCB0055191E /* TouchBar Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSTouchBar Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86D4E02C1B83BFCB0055191E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53194CFA1D8B31A300A3CB35 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				53194CFB1D8B31B600A3CB35 /* CustomView.h */,
+				53194CFC1D8B31B600A3CB35 /* CustomView.m */,
+				53194CFD1D8B31B600A3CB35 /* CustomViewViewController.h */,
+				53194CFE1D8B31B600A3CB35 /* CustomViewViewController.m */,
+				530D35A41D8A5C51001AE536 /* CustomViewViewController.storyboard */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		5333F8C71D9450D200874D18 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				5333F8C11D944E0400874D18 /* PopoverViewController.h */,
+				5333F8C21D944E0400874D18 /* PopoverViewController.m */,
+				53B328D01D89CE3100947CE2 /* PopoverViewController.storyboard */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
+		534BE6401DB5194D00FF266C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				531FE2F51D89BBE500908205 /* Main.storyboard */,
+				531FE2F91D89BBF900908205 /* main.m */,
+				531FE2E41D89BBD400908205 /* AppDelegate.h */,
+				531FE2E51D89BBD400908205 /* AppDelegate.m */,
+				531FE2EC1D89BBD400908205 /* WindowController.h */,
+				531FE2ED1D89BBD400908205 /* WindowController.m */,
+				531FE2EA1D89BBD400908205 /* SplitViewController.h */,
+				531FE2EB1D89BBD400908205 /* SplitViewController.m */,
+				531FE2E81D89BBD400908205 /* MasterViewController.h */,
+				531FE2E91D89BBD400908205 /* MasterViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		534BE6411DB51E4800FF266C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				5381BDB21D9B2F330009DB96 /* ButtonViewController.h */,
+				5381BDB31D9B2F330009DB96 /* ButtonViewController.m */,
+				531EEB8E1DA810E800340343 /* ButtonViewController.storyboard */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		534BE6421DB51E6A00FF266C /* Segmented */ = {
+			isa = PBXGroup;
+			children = (
+				53463EAD1D8ADE9A003EB6DC /* SegmentedViewController.h */,
+				53463EAE1D8ADE9A003EB6DC /* SegmentedViewController.m */,
+				53B328D41D89CE3100947CE2 /* SegmentedControlViewController.storyboard */,
+			);
+			name = Segmented;
+			sourceTree = "<group>";
+		};
+		534BE6431DB51E8500FF266C /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				53B74DFD1D8B15CC00DE6C53 /* GroupViewController.h */,
+				53B74DFE1D8B15CC00DE6C53 /* GroupViewController.m */,
+				53B74E001D8B1A0200DE6C53 /* GroupViewController.storyboard */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
+		534BE6441DB51E9F00FF266C /* FancyGroup */ = {
+			isa = PBXGroup;
+			children = (
+				53EBCE151D9065B80082DD37 /* FancyGroupViewController.h */,
+				53EBCE161D9065B80082DD37 /* FancyGroupViewController.m */,
+				53EBCE181D9066080082DD37 /* FancyGroupViewController.storyboard */,
+			);
+			name = FancyGroup;
+			sourceTree = "<group>";
+		};
+		534BE6451DB51F4B00FF266C /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				53463EA91D8ADE9A003EB6DC /* ColorPickerViewController.h */,
+				53463EAA1D8ADE9A003EB6DC /* ColorPickerViewController.m */,
+				53B328CE1D89CE3100947CE2 /* ColorPickerViewController.storyboard */,
+			);
+			name = ColorPicker;
+			sourceTree = "<group>";
+		};
+		534BE6461DB51F6B00FF266C /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				53463EAF1D8ADE9A003EB6DC /* SliderViewController.h */,
+				53463EB01D8ADE9A003EB6DC /* SliderViewController.m */,
+				53B328D61D89CE3100947CE2 /* SliderViewController.storyboard */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
+		534BE6471DB51F9400FF266C /* Popover with Scrubber */ = {
+			isa = PBXGroup;
+			children = (
+				53463EAB1D8ADE9A003EB6DC /* PopoverScrubberViewController.h */,
+				53463EAC1D8ADE9A003EB6DC /* PopoverScrubberViewController.m */,
+				5333F8C41D944E5100874D18 /* PopoverScrubberViewController.storyboard */,
+			);
+			name = "Popover with Scrubber";
+			sourceTree = "<group>";
+		};
+		534BE6481DB51FD200FF266C /* TextField Candidate List */ = {
+			isa = PBXGroup;
+			children = (
+				53463EA71D8ADE9A003EB6DC /* CandidateListViewController.h */,
+				53463EA81D8ADE9A003EB6DC /* CandidateListViewController.m */,
+				53B328CC1D89CE3100947CE2 /* CandidateListViewController.storyboard */,
+			);
+			name = "TextField Candidate List";
+			sourceTree = "<group>";
+		};
+		534BE6491DB51FE700FF266C /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				53EBCE0C1D904B880082DD37 /* TextViewController.h */,
+				53EBCE0D1D904B880082DD37 /* TextViewController.m */,
+				53EBCE0F1D904C580082DD37 /* TextViewController.storyboard */,
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
+		534BE64A1DB51FF900FF266C /* Sharing Service */ = {
+			isa = PBXGroup;
+			children = (
+				532586511D8B44BF0065933B /* ServicesViewController.h */,
+				532586521D8B44BF0065933B /* ServicesViewController.m */,
+				532586541D8B46490065933B /* ServicesViewController.storyboard */,
+			);
+			name = "Sharing Service";
+			sourceTree = "<group>";
+		};
+		5353A3D71DB0168E00027CC7 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5353A3D81DB016A600027CC7 /* ScrollViewController.h */,
+				5353A3D91DB016A600027CC7 /* ScrollViewController.m */,
+				53B0D9021D9B28F200AD5032 /* ScrollViewController.storyboard */,
+			);
+			name = ScrollView;
+			sourceTree = "<group>";
+		};
+		53B328E91D89E64800947CE2 /* Visibility Priority */ = {
+			isa = PBXGroup;
+			children = (
+				53263CD41D9D883F002D1DFC /* VisibilityViewController.h */,
+				53263CD31D9D883F002D1DFC /* VisbilityViewController.m */,
+				53263CD01D9D87BB002D1DFC /* VisibilityViewController.storyboard */,
+			);
+			name = "Visibility Priority";
+			sourceTree = "<group>";
+		};
+		53B74E031D8B22C800DE6C53 /* Scrubber */ = {
+			isa = PBXGroup;
+			children = (
+				53194CF41D8B319C00A3CB35 /* ScrubberViewController.h */,
+				53194CF51D8B319C00A3CB35 /* ScrubberViewController.m */,
+				53194CF61D8B319C00A3CB35 /* ThumbnailItemView.h */,
+				53194CF71D8B319C00A3CB35 /* ThumbnailItemView.m */,
+				5381BDB51D9B34690009DB96 /* IconTextScrubberBarItem.h */,
+				5381BDB61D9B34690009DB96 /* IconTextScrubberBarItem.m */,
+				53BCDE8B1D99909000F3488D /* ScrubberBackgroundView.h */,
+				53BCDE8C1D99909000F3488D /* ScrubberBackgroundView.m */,
+				53BCDE941D99935800F3488D /* Selection */,
+				53B328D21D89CE3100947CE2 /* ScrubberViewController.storyboard */,
+			);
+			name = Scrubber;
+			sourceTree = "<group>";
+		};
+		53BCDE941D99935800F3488D /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				53BCDE951D99936100F3488D /* CustomBackgroundScrubberSelectionStyle.h */,
+				53BCDE961D99936100F3488D /* CustomBackgroundScrubberSelectionStyle.m */,
+				53BCDE971D99936100F3488D /* SelectionBackgroundView.h */,
+				53BCDE981D99936100F3488D /* SelectionBackgroundView.m */,
+				53BCDE9E1D99942E00F3488D /* CustomOverlayScrubberSelectionStyle.h */,
+				53BCDE9F1D99942E00F3488D /* CustomOverlayScrubberSelectionStyle.m */,
+				53BCDE991D99936100F3488D /* SelectionOverlayView.h */,
+				53BCDE9A1D99936100F3488D /* SelectionOverlayView.m */,
+			);
+			name = Selection;
+			sourceTree = "<group>";
+		};
+		53F2950F1DAE9B8400E204E8 /* TouchBar Images */ = {
+			isa = PBXGroup;
+			children = (
+				53F2950A1DAE9B7A00E204E8 /* TouchBarImagesViewController.h */,
+				53F2950B1DAE9B7A00E204E8 /* TouchBarImagesViewController.m */,
+				53F295071DAE9B7A00E204E8 /* CollectionViewItem.h */,
+				53F295081DAE9B7A00E204E8 /* CollectionViewItem.m */,
+				53F295101DAE9C3000E204E8 /* TouchBarImagesViewController.storyboard */,
+				53F295091DAE9B7A00E204E8 /* CollectionViewItem.xib */,
+			);
+			name = "TouchBar Images";
+			sourceTree = "<group>";
+		};
+		86D4E0261B83BFCB0055191E = {
+			isa = PBXGroup;
+			children = (
+				53DE4F291DA6BC3D003274F8 /* README.md */,
+				86D4E0311B83BFCB0055191E /* TouchBar Catalog */,
+				86D4E0301B83BFCB0055191E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86D4E0301B83BFCB0055191E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86D4E02F1B83BFCB0055191E /* TouchBar Catalog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86D4E0311B83BFCB0055191E /* TouchBar Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				534BE6401DB5194D00FF266C /* Main */,
+				534BE6411DB51E4800FF266C /* Button */,
+				534BE6421DB51E6A00FF266C /* Segmented */,
+				534BE6431DB51E8500FF266C /* Group */,
+				534BE6441DB51E9F00FF266C /* FancyGroup */,
+				53194CFA1D8B31A300A3CB35 /* CustomView */,
+				5353A3D71DB0168E00027CC7 /* ScrollView */,
+				534BE6451DB51F4B00FF266C /* ColorPicker */,
+				534BE6461DB51F6B00FF266C /* Slider */,
+				5333F8C71D9450D200874D18 /* Popover */,
+				534BE6471DB51F9400FF266C /* Popover with Scrubber */,
+				53B74E031D8B22C800DE6C53 /* Scrubber */,
+				534BE6481DB51FD200FF266C /* TextField Candidate List */,
+				534BE6491DB51FE700FF266C /* TextView */,
+				534BE64A1DB51FF900FF266C /* Sharing Service */,
+				53B328E91D89E64800947CE2 /* Visibility Priority */,
+				53F2950F1DAE9B8400E204E8 /* TouchBar Images */,
+				86D4E0351B83BFCB0055191E /* Supporting Files */,
+			);
+			name = "NSTouchBar Catalog";
+			path = SplitTest;
+			sourceTree = "<group>";
+		};
+		86D4E0351B83BFCB0055191E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				531FE2F31D89BBDC00908205 /* Assets.xcassets */,
+				53B328DE1D89DC6A00947CE2 /* Credits.rtf */,
+				53B328E41D89DF9B00947CE2 /* Tests.plist */,
+				53B328E01D89DC6A00947CE2 /* InfoPlist.strings */,
+				531FE2F81D89BBF400908205 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86D4E02E1B83BFCB0055191E /* TouchBar Catalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86D4E0591B83BFCB0055191E /* Build configuration list for PBXNativeTarget "NSTouchBar Catalog" */;
+			buildPhases = (
+				86D4E02B1B83BFCB0055191E /* Sources */,
+				86D4E02C1B83BFCB0055191E /* Frameworks */,
+				86D4E02D1B83BFCB0055191E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSTouchBar Catalog";
+			productName = SplitTest;
+			productReference = 86D4E02F1B83BFCB0055191E /* TouchBar Catalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86D4E0271B83BFCB0055191E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Mudi Dandan";
+				TargetAttributes = {
+					86D4E02E1B83BFCB0055191E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 86D4E02A1B83BFCB0055191E /* Build configuration list for PBXProject "NSTouchBar Catalog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86D4E0261B83BFCB0055191E;
+			productRefGroup = 86D4E0301B83BFCB0055191E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86D4E02E1B83BFCB0055191E /* TouchBar Catalog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86D4E02D1B83BFCB0055191E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B328DB1D89CE3100947CE2 /* ScrubberViewController.storyboard in Resources */,
+				53B328DA1D89CE3100947CE2 /* PopoverViewController.storyboard in Resources */,
+				531FE2F41D89BBDC00908205 /* Assets.xcassets in Resources */,
+				53B328D81D89CE3100947CE2 /* CandidateListViewController.storyboard in Resources */,
+				532586561D8B46490065933B /* ServicesViewController.storyboard in Resources */,
+				53B328E51D89DF9B00947CE2 /* Tests.plist in Resources */,
+				530D35A61D8A5C51001AE536 /* CustomViewViewController.storyboard in Resources */,
+				53B328DC1D89CE3100947CE2 /* SegmentedControlViewController.storyboard in Resources */,
+				53EBCE111D904C580082DD37 /* TextViewController.storyboard in Resources */,
+				531EEB901DA810E800340343 /* ButtonViewController.storyboard in Resources */,
+				5333F8C61D944E5100874D18 /* PopoverScrubberViewController.storyboard in Resources */,
+				53F295121DAE9C3000E204E8 /* TouchBarImagesViewController.storyboard in Resources */,
+				53B328E21D89DC6A00947CE2 /* Credits.rtf in Resources */,
+				53EBCE1A1D9066080082DD37 /* FancyGroupViewController.storyboard in Resources */,
+				53B0D9041D9B28F200AD5032 /* ScrollViewController.storyboard in Resources */,
+				53B328DD1D89CE3100947CE2 /* SliderViewController.storyboard in Resources */,
+				53B328D91D89CE3100947CE2 /* ColorPickerViewController.storyboard in Resources */,
+				53B328E31D89DC6A00947CE2 /* InfoPlist.strings in Resources */,
+				53F2950D1DAE9B7A00E204E8 /* CollectionViewItem.xib in Resources */,
+				53263CD21D9D87BB002D1DFC /* VisibilityViewController.storyboard in Resources */,
+				531FE2F71D89BBE500908205 /* Main.storyboard in Resources */,
+				53B74E021D8B1A0200DE6C53 /* GroupViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86D4E02B1B83BFCB0055191E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BCDE9D1D99936100F3488D /* SelectionOverlayView.m in Sources */,
+				531FE2F01D89BBD400908205 /* MasterViewController.m in Sources */,
+				53463EB51D8ADE9A003EB6DC /* SliderViewController.m in Sources */,
+				53BCDE9C1D99936100F3488D /* SelectionBackgroundView.m in Sources */,
+				531FE2F21D89BBD400908205 /* WindowController.m in Sources */,
+				53F2950E1DAE9B7A00E204E8 /* TouchBarImagesViewController.m in Sources */,
+				53263CD51D9D883F002D1DFC /* VisbilityViewController.m in Sources */,
+				532586531D8B44BF0065933B /* ServicesViewController.m in Sources */,
+				531FE2EE1D89BBD400908205 /* AppDelegate.m in Sources */,
+				53F2950C1DAE9B7A00E204E8 /* CollectionViewItem.m in Sources */,
+				53463EB31D8ADE9A003EB6DC /* PopoverScrubberViewController.m in Sources */,
+				53194CFF1D8B31B600A3CB35 /* CustomView.m in Sources */,
+				531FE2F11D89BBD400908205 /* SplitViewController.m in Sources */,
+				53EBCE0E1D904B880082DD37 /* TextViewController.m in Sources */,
+				5353A3DA1DB016A600027CC7 /* ScrollViewController.m in Sources */,
+				53194D001D8B31B600A3CB35 /* CustomViewViewController.m in Sources */,
+				53194CF81D8B319C00A3CB35 /* ScrubberViewController.m in Sources */,
+				53194CF91D8B319C00A3CB35 /* ThumbnailItemView.m in Sources */,
+				5381BDB41D9B2F330009DB96 /* ButtonViewController.m in Sources */,
+				5333F8C31D944E0400874D18 /* PopoverViewController.m in Sources */,
+				5381BDB71D9B34690009DB96 /* IconTextScrubberBarItem.m in Sources */,
+				53463EB41D8ADE9A003EB6DC /* SegmentedViewController.m in Sources */,
+				53B74DFF1D8B15CC00DE6C53 /* GroupViewController.m in Sources */,
+				53463EB21D8ADE9A003EB6DC /* ColorPickerViewController.m in Sources */,
+				53EBCE171D9065B80082DD37 /* FancyGroupViewController.m in Sources */,
+				53463EB11D8ADE9A003EB6DC /* CandidateListViewController.m in Sources */,
+				53BCDE9B1D99936100F3488D /* CustomBackgroundScrubberSelectionStyle.m in Sources */,
+				53BCDEA01D99942E00F3488D /* CustomOverlayScrubberSelectionStyle.m in Sources */,
+				531FE2FA1D89BBF900908205 /* main.m in Sources */,
+				53BCDE8D1D99909000F3488D /* ScrubberBackgroundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		530D35A41D8A5C51001AE536 /* CustomViewViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				530D35A51D8A5C51001AE536 /* Base */,
+			);
+			name = CustomViewViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		531EEB8E1DA810E800340343 /* ButtonViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				531EEB8F1DA810E800340343 /* Base */,
+			);
+			name = ButtonViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		531FE2F51D89BBE500908205 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				531FE2F61D89BBE500908205 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		532586541D8B46490065933B /* ServicesViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532586551D8B46490065933B /* Base */,
+			);
+			name = ServicesViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53263CD01D9D87BB002D1DFC /* VisibilityViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53263CD11D9D87BB002D1DFC /* Base */,
+			);
+			name = VisibilityViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		5333F8C41D944E5100874D18 /* PopoverScrubberViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5333F8C51D944E5100874D18 /* Base */,
+			);
+			name = PopoverScrubberViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B0D9021D9B28F200AD5032 /* ScrollViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B0D9031D9B28F200AD5032 /* Base */,
+			);
+			name = ScrollViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B328CC1D89CE3100947CE2 /* CandidateListViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328CD1D89CE3100947CE2 /* Base */,
+			);
+			name = CandidateListViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B328CE1D89CE3100947CE2 /* ColorPickerViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328CF1D89CE3100947CE2 /* Base */,
+			);
+			name = ColorPickerViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B328D01D89CE3100947CE2 /* PopoverViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328D11D89CE3100947CE2 /* Base */,
+			);
+			name = PopoverViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B328D21D89CE3100947CE2 /* ScrubberViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328D31D89CE3100947CE2 /* Base */,
+			);
+			name = ScrubberViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B328D41D89CE3100947CE2 /* SegmentedControlViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328D51D89CE3100947CE2 /* Base */,
+			);
+			name = SegmentedControlViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B328D61D89CE3100947CE2 /* SliderViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328D71D89CE3100947CE2 /* Base */,
+			);
+			name = SliderViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53B328DE1D89DC6A00947CE2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328DF1D89DC6A00947CE2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		53B328E01D89DC6A00947CE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B328E11D89DC6A00947CE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53B74E001D8B1A0200DE6C53 /* GroupViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53B74E011D8B1A0200DE6C53 /* Base */,
+			);
+			name = GroupViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53EBCE0F1D904C580082DD37 /* TextViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53EBCE101D904C580082DD37 /* Base */,
+			);
+			name = TextViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53EBCE181D9066080082DD37 /* FancyGroupViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53EBCE191D9066080082DD37 /* Base */,
+			);
+			name = FancyGroupViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		53F295101DAE9C3000E204E8 /* TouchBarImagesViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F295111DAE9C3000E204E8 /* Base */,
+			);
+			name = TouchBarImagesViewController.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86D4E0571B83BFCB0055191E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		86D4E0581B83BFCB0055191E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		86D4E05A1B83BFCB0055191E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSTouchBar Catalog/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.TouchBarCatalog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		86D4E05B1B83BFCB0055191E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NSTouchBar Catalog/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.TouchBarCatalog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86D4E02A1B83BFCB0055191E /* Build configuration list for PBXProject "NSTouchBar Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D4E0571B83BFCB0055191E /* Debug */,
+				86D4E0581B83BFCB0055191E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86D4E0591B83BFCB0055191E /* Build configuration list for PBXNativeTarget "NSTouchBar Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86D4E05A1B83BFCB0055191E /* Debug */,
+				86D4E05B1B83BFCB0055191E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86D4E0271B83BFCB0055191E /* Project object */;
+}

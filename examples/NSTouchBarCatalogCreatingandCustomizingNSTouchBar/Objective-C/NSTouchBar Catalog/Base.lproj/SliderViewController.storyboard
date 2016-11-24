@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SliderViewController-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" userLabel="SliderViewController" customClass="SliderViewController" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="132"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="0Jr-7b-wdG">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="132"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="95" width="264" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSSliderTouchBarItem" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="Msd-nU-wVk">
+                                        <rect key="frame" x="75" y="58" width="151" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Use Slider Accessory" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ic1-A7-AgP">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="useSliderAccessoryAction:" target="wyg-tK-EQJ" id="26W-Yt-Sra"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="khU-zI-4a9">
+                                        <rect key="frame" x="18" y="38" width="264" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="EQg-pw-Tgm"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="Gdj-IN-9yx">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="F89-ZJ-3Ja"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Ffp-Xz-2rB"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="M6b-O8-9E9"/>
+                                    <constraint firstItem="Msd-nU-wVk" firstAttribute="centerX" secondItem="3Dm-fu-hsv" secondAttribute="centerX" id="MsB-PU-QzB"/>
+                                    <constraint firstItem="khU-zI-4a9" firstAttribute="top" secondItem="Msd-nU-wVk" secondAttribute="bottom" constant="8" id="XVx-YE-a7e"/>
+                                    <constraint firstItem="Msd-nU-wVk" firstAttribute="top" secondItem="3Dm-fu-hsv" secondAttribute="bottom" constant="21" id="a6W-Gg-FYb"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="0Jr-7b-wdG" secondAttribute="leading" constant="20" symbolic="YES" id="nC1-8k-TPF"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="0Jr-7b-wdG" secondAttribute="top" constant="20" symbolic="YES" id="qgZ-VE-PuW"/>
+                                    <constraint firstItem="khU-zI-4a9" firstAttribute="centerX" secondItem="0Jr-7b-wdG" secondAttribute="centerX" id="tzW-pr-8ZR"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0Jr-7b-wdG" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="0Uj-ds-hZ1"/>
+                            <constraint firstItem="0Jr-7b-wdG" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="NDZ-BT-Syf"/>
+                            <constraint firstAttribute="bottom" secondItem="0Jr-7b-wdG" secondAttribute="bottom" id="W7M-Em-qMI"/>
+                            <constraint firstAttribute="trailing" secondItem="0Jr-7b-wdG" secondAttribute="trailing" id="oiK-gy-Jc2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackLabel" destination="khU-zI-4a9" id="FlK-EN-zRi"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="ZBx-jJ-FNc"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="48"/>
+        </scene>
+    </scenes>
+</document>

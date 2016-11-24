@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2544" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scroll View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController id="wyg-tK-EQJ" customClass="ScrollViewController" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="PRt-Hx-2hf">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="128"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                        <rect key="frame" x="18" y="91" width="414" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSCustomTouchBarItem using an NSScrollView" id="Y7l-Vu-Jda">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="PRt-Hx-2hf" secondAttribute="leading" constant="20" symbolic="YES" id="PIq-5W-D96"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="ZmY-Av-YAW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="e0T-yR-YaH"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="pwi-nc-pDz"/>
+                                    <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="PRt-Hx-2hf" secondAttribute="top" constant="20" id="rtC-Au-4tK"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PRt-Hx-2hf" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="Lkn-Uz-CIU"/>
+                            <constraint firstItem="PRt-Hx-2hf" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="Y9x-Sa-2wi"/>
+                            <constraint firstAttribute="bottom" secondItem="PRt-Hx-2hf" secondAttribute="bottom" id="aPG-WC-bLc"/>
+                            <constraint firstAttribute="trailing" secondItem="PRt-Hx-2hf" secondAttribute="trailing" id="rJw-iX-QPY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="GQX-RJ-vE0" id="ii5-Uq-o6n"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" id="GQX-RJ-vE0">
+                    <rect key="frame" x="0.0" y="0.0" width="410" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <clipView key="contentView" id="fPt-Mu-7EZ">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-Lt-hQn">
+                                <rect key="frame" x="0.0" y="-30" width="5120" height="60"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sierra_background" id="QfF-zK-2D4"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xKb-Lt-hQn" secondAttribute="bottom" constant="-30" id="1dY-P2-ueL"/>
+                            <constraint firstItem="xKb-Lt-hQn" firstAttribute="leading" secondItem="fPt-Mu-7EZ" secondAttribute="leading" id="kZx-UR-pvb"/>
+                        </constraints>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="6Ud-IV-GaN">
+                        <rect key="frame" x="-100" y="-100" width="408" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="rOC-uy-kZy">
+                        <rect key="frame" x="-100" y="-100" width="16" height="60"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </objects>
+            <point key="canvasLocation" x="147" y="8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sierra_background" width="5120" height="60"/>
+    </resources>
+</document>

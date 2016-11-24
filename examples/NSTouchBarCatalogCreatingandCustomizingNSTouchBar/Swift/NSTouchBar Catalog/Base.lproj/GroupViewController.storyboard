@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2656" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="7104"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.1"/>
+    </dependencies>
+    <scenes>
+        <!--Group View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController storyboardIdentifier="GroupViewController" id="wyg-tK-EQJ" customClass="GroupViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-fu-hsv">
+                                <rect key="frame" x="18" y="263" width="414" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSGroupTouchBarItem" id="Y7l-Vu-Jda">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Dm-fu-hsv" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" constant="20" symbolic="YES" id="WL1-jK-Yi5"/>
+                            <constraint firstItem="3Dm-fu-hsv" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" constant="20" symbolic="YES" id="Zbe-Bf-dpw"/>
+                            <constraint firstAttribute="trailing" secondItem="3Dm-fu-hsv" secondAttribute="trailing" constant="20" symbolic="YES" id="g92-HY-mWk"/>
+                        </constraints>
+                    </view>
+                    <touchBar key="touchBar" id="IoD-zN-h1W" userLabel="NSTouchBar">
+                        <touchBarItems>
+                            <touchBarGroupItem id="rU1-NB-gww" userLabel="NSGroupTouchBarItem">
+                                <touchBar key="groupTouchBar" id="64K-5x-ijZ" userLabel="Bar">
+                                    <touchBarItems>
+                                        <touchBarItem identifier="com.TouchbarCatalog.groupItem.button1" id="wNY-F6-KZz" userLabel="Button1">
+                                            <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.groupItem.button1" id="XRC-Qf-LBh">
+                                                <button key="view" verticalHuggingPriority="750" id="6Cx-ub-uZn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="72" id="MPc-Qc-hp8"/>
+                                                        <constraint firstAttribute="height" constant="30" id="WqV-IZ-xaq"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Button1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KEa-2u-2Mp">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system" size="15"/>
+                                                    </buttonCell>
+                                                </button>
+                                            </viewController>
+                                            <size key="designTimeSize" width="72" height="30"/>
+                                        </touchBarItem>
+                                        <touchBarItem identifier="com.TouchbarCatalog.groupItem.button2" id="Pds-hZ-cue" userLabel="Button2">
+                                            <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.groupItem.button2" id="HAW-Tx-hyq">
+                                                <button key="view" verticalHuggingPriority="750" id="xPw-Rx-L7P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="0np-Xq-Ksz"/>
+                                                        <constraint firstAttribute="width" constant="72" id="S9k-PF-KSO"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Button2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LtD-rD-qyr">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system" size="15"/>
+                                                    </buttonCell>
+                                                </button>
+                                            </viewController>
+                                            <size key="designTimeSize" width="72" height="30"/>
+                                        </touchBarItem>
+                                        <touchBarItem id="gW9-8N-agr" userLabel="Button3">
+                                            <viewController key="viewController" storyboardIdentifier="com.TouchbarCatalog.groupItem.button3" id="BO8-WX-ML3">
+                                                <button key="view" verticalHuggingPriority="750" id="1pY-yx-4j8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="72" id="5vB-gj-rs1"/>
+                                                        <constraint firstAttribute="height" constant="30" id="RfC-bm-bcE"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Button3" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="j01-0i-S1a">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system" size="15"/>
+                                                    </buttonCell>
+                                                </button>
+                                            </viewController>
+                                            <size key="designTimeSize" width="72" height="30"/>
+                                        </touchBarItem>
+                                    </touchBarItems>
+                                </touchBar>
+                            </touchBarGroupItem>
+                        </touchBarItems>
+                    </touchBar>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="87"/>
+        </scene>
+    </scenes>
+</document>

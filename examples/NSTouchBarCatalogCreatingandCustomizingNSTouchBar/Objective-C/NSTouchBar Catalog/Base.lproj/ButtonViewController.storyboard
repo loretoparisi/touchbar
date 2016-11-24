@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11539" systemVersion="16B2656" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="wyg-tK-EQJ">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="7104"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11539"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.1"/>
+    </dependencies>
+    <scenes>
+        <!--Button View Controller-->
+        <scene sceneID="uqL-IM-Kav">
+            <objects>
+                <viewController storyboardIdentifier="ButtonViewController" id="wyg-tK-EQJ" customClass="ButtonViewController" sceneMemberID="viewController">
+                    <view key="view" id="UfL-6e-7pI">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="99"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="fST-a2-Lcm">
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="99"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kRi-ah-LVj">
+                                        <rect key="frame" x="18" y="62" width="336" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Shows a NSCustomTouchBarItem using an NSButton" id="EWz-bE-GV4">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="h31-Qp-v7x">
+                                        <rect key="frame" x="112" y="18" width="149" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Custom Button Color" bezelStyle="regularSquare" imagePosition="left" inset="2" id="jRk-GX-ttj">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customize:" target="wyg-tK-EQJ" id="DU9-Bs-0cf"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="BvC-Iy-c1l">
+                                        <rect key="frame" x="112" y="38" width="114" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Size Constraint" bezelStyle="regularSquare" imagePosition="left" inset="2" id="NQP-7q-7kC">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="customize:" target="wyg-tK-EQJ" id="bwb-N9-byh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="99" id="42R-Is-JtL"/>
+                                    <constraint firstItem="BvC-Iy-c1l" firstAttribute="leading" secondItem="h31-Qp-v7x" secondAttribute="leading" id="XJt-i4-Dz6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="372" id="aaa-6J-LID"/>
+                                    <constraint firstItem="kRi-ah-LVj" firstAttribute="top" secondItem="fST-a2-Lcm" secondAttribute="top" constant="20" symbolic="YES" id="bme-G7-qvf"/>
+                                    <constraint firstAttribute="trailing" secondItem="kRi-ah-LVj" secondAttribute="trailing" constant="20" symbolic="YES" id="g1E-6p-FSw"/>
+                                    <constraint firstItem="BvC-Iy-c1l" firstAttribute="top" secondItem="kRi-ah-LVj" secondAttribute="bottom" constant="8" symbolic="YES" id="jLI-xE-SZX"/>
+                                    <constraint firstItem="h31-Qp-v7x" firstAttribute="top" secondItem="BvC-Iy-c1l" secondAttribute="bottom" constant="6" symbolic="YES" id="oLq-A8-8UF"/>
+                                    <constraint firstItem="kRi-ah-LVj" firstAttribute="centerX" secondItem="h31-Qp-v7x" secondAttribute="centerX" id="tP9-U3-YtO"/>
+                                    <constraint firstItem="kRi-ah-LVj" firstAttribute="leading" secondItem="fST-a2-Lcm" secondAttribute="leading" constant="20" symbolic="YES" id="xyv-lO-FK7"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fST-a2-Lcm" firstAttribute="leading" secondItem="UfL-6e-7pI" secondAttribute="leading" id="7PO-Zy-VLM"/>
+                            <constraint firstItem="fST-a2-Lcm" firstAttribute="top" secondItem="UfL-6e-7pI" secondAttribute="top" id="WAZ-4J-di0"/>
+                            <constraint firstAttribute="bottom" secondItem="fST-a2-Lcm" secondAttribute="bottom" id="Xyg-cP-33g"/>
+                            <constraint firstAttribute="trailing" secondItem="fST-a2-Lcm" secondAttribute="trailing" id="gSv-r6-P8y"/>
+                        </constraints>
+                    </view>
+                    <touchBar key="touchBar" id="Ta0-el-FMM" userLabel="NSTouchBar">
+                        <touchBarItems>
+                            <touchBarItem id="eyG-Rd-m8h" userLabel="Button 1">
+                                <viewController key="viewController" id="CHX-N6-weg">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c7I-uP-emw">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <buttonCell key="cell" type="push" title="Button 1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ndX-wq-dDO">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="SD5-BM-XWK" userLabel="Push Button">
+                                <viewController key="viewController" id="st0-qL-XeN">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YY7-VX-xMR">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="Accounts" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tnj-57-afy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="jCp-Zd-APD" userLabel="Button 3">
+                                <viewController key="viewController" id="7ah-fu-pwA">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="82a-LJ-6AI">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                        <buttonCell key="cell" type="push" title="Button 3" bezelStyle="rounded" image="Bookmark" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VHH-o6-BXB">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <outlet property="button3" destination="82a-LJ-6AI" id="gnV-hI-J1C"/>
+                        <outlet property="sizeConstraint" destination="BvC-Iy-c1l" id="Ceg-td-dmD"/>
+                        <outlet property="useCustomColor" destination="h31-Qp-v7x" id="Xuw-X6-e9H"/>
+                    </connections>
+                </viewController>
+                <customObject id="tpe-gi-lSa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="-6.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Accounts" width="15" height="15"/>
+        <image name="Bookmark" width="15" height="15"/>
+    </resources>
+</document>
