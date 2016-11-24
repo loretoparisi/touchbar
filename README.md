@@ -43,6 +43,10 @@ The [NSTouchbar](https://developer.apple.com/reference/appkit/nstouchbar) is an 
 The `NSTouchbar` Class Diagram
 <img width="922" alt="touchbarclass" src="https://cloud.githubusercontent.com/assets/163333/20582611/e61952ea-b1e2-11e6-87fa-3e04fd56e9f7.png">
 
+## Touchbar Examples API
+- [NSTouchBar Catalog](https://github.com/loretoparisi/touchbar/tree/master/examples/NSTouchBarCatalogCreatingandCustomizingNSTouchBar), Creating and Customizing NSTouchBar
+- [ToolbarSample](https://github.com/loretoparisi/touchbar/tree/master/examples/ToolbarSampleUsingNSToolbartoconstructawindowtoolbar), ToolbarSample: Using NSToolbar to construct a window toolbar
+
 ## Touchbar Tools
 - [TouchBarScreenshotter](https://github.com/steventroughtonsmith/TouchBarScreenshotter), easily snap screenshots of the currently presented Touch Bar in macOS
 - [TouchBarDemoApp](https://github.com/bikkelbroeders/TouchBarDemoApp), Allows you to use your macOS Touch Bar from an iPad (through USB connection) or on-screen by pressing the Fn-key.
