@@ -26,7 +26,9 @@ so you should see the `Show Touch Bar` option just after the Organizer option.
 The [TouchBarLauncher](https://github.com/zats/TouchBarLauncher) Xcode program in Swift, let you run the Touch Bar simulator programmatically and it's very handy. Made by [Sash Zats](https://github.com/zats) it uses the simulator host window controller `IDETouchBarSimulatorHostWindowController` to leverage the TouchBar.
 
 ## Touch Bar integrations
-[React Native TouchBar](https://github.com/ptmt/react-native-touchbar) is a [React Native](https://github.com/facebook/react-native) component that adds support for the macOS `TouchBar` in React Native.
+- [React Native TouchBar](https://github.com/ptmt/react-native-touchbar) is a [React Native](https://github.com/facebook/react-native) component that adds support for the macOS `TouchBar` in React Native.
+- [Electron](https://github.com/electron/electron/issues/7781), Support MacBook Touch Bar API
+- [NW.js aka NodeWebKit](https://github.com/nwjs/nw.js/issues/5501)
 
 ## References
 - [About the TouchBar]( https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/AbouttheTouchBar.html)
@@ -34,6 +36,12 @@ The [TouchBarLauncher](https://github.com/zats/TouchBarLauncher) Xcode program i
 - [Interaction and Gestures](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Interaction.html#//apple_ref/doc/uid/20000957-CH105-SW1)
 - [TouchBar Icons](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/Icons.html#//apple_ref/doc/uid/20000957-CH107-SW1)
 - [TouchBar Controls](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/ControlsandViews.html#//apple_ref/doc/uid/20000957-CH108-SW1)
+
+## NSTouchbar class
+The [NSTouchbar](https://developer.apple.com/reference/appkit/nstouchbar) is an object that provides dynamic contextual controls in the Touch Bar of supported models of MacBook Pro.
+
+The `NSTouchbar` Class Diagram
+<img width="922" alt="touchbarclass" src="https://cloud.githubusercontent.com/assets/163333/20582611/e61952ea-b1e2-11e6-87fa-3e04fd56e9f7.png">
 
 ## Touchbar Tools
 - [TouchBarScreenshotter](https://github.com/steventroughtonsmith/TouchBarScreenshotter), easily snap screenshots of the currently presented Touch Bar in macOS
@@ -46,3 +54,9 @@ The [TouchBarLauncher](https://github.com/zats/TouchBarLauncher) Xcode program i
 
 ## Touchbar Games (!)
 - [Touch Bar Space Fight](https://github.com/insidegui/TouchBarSpaceFight)
+
+## Touchbar Tutorials
+- [How to Use NSTouchBar on macOS](https://www.raywenderlich.com/147118/use-nstouchbar-macos)
+- [NSTouchBar 开发教程 (Development Tutorial, Chinese, Ed.)](http://www.macdev.io/tutorial/NSTouchBar.html)
+
+
